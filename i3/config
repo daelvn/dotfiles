@@ -1,0 +1,131 @@
+# i3 config file
+# By daelvn
+# https://github.com/daelvn/dotfiles
+
+# Set some default keys
+set $mod Mod1 
+set $alt Mod1 
+set $win Mod4 
+
+# Modes
+mode "resize" {
+	# Resize the window to your liking
+	#
+	# +--------+
+	# |        |
+	# |      L | R
+	# |   U    |
+	# +--------+
+	#     D
+	bindsym Right resize grow width 5 px
+	bindsym Left resize shrink width 5 px
+	bindsym Up resize shrink height 5 px
+	bindsym Down resize grow height 5 px
+
+	bindsym Return mode "default"
+}
+bindsym $mod+r mode "resize"
+mode "launch" {
+	# Launch default apps
+	bindsym c exec chromium
+	bindsym d exec discord
+	bindsym g exec gitter
+	bindsym u exec urxvt
+
+	bindsym Return mode "default"
+}
+bindsym $mod+x mode "launch"
+mode "wmconfig" {
+	# WM Things
+	bindsym c reload
+	bindsym r restart
+	bindsym e exec "i3-nagbar -t warning -m 'Do you really want to close i3?' -b 'Yes' 'i3-msg exit'"
+
+	bindsym Return mode "default"
+}
+bindsym $mod+w mode "wmconfig"
+mode "focus" {
+	# Focus managing
+	bindsym Up focus up
+	bindsym Left focus left
+	bindsym Down focus down
+	bindsym Right focus right
+
+	bindsym Return mode "default"
+}
+bindsym $mod+f mode "focus"
+mode "move" {
+	# Move the focused window
+	bindsym Up move up
+	bindsym Left move left
+	bindsym Down move down
+	bindsym Right move right
+
+	bindsym Return mode "default"
+}
+bindsym $mod+m mode "move"
+
+# Some other keybinds
+bindsym $win+x exec rofi -show run
+bindsym $win+k kill
+bindsym $win+h split h
+bindsym $win+v split v
+bindsym $win+f fullscreen toggle
+bindsym $win+t floating toggle
+
+# Workspaces
+set $w1 "1: work"
+set $w2 "2: alt"
+set $w3 "3: other"
+set $w4 "4: discord"
+set $w5 "5: gitter"
+set $w6 "6: steam"
+set $w7 "7: games"
+
+bindsym $mod+1 workspace $w1
+bindsym $mod+2 workspace $w2
+bindsym $mod+3 workspace $w3
+bindsym $mod+4 workspace $w4
+bindsym $mod+5 workspace $w5
+bindsym $mod+6 workspace $w6
+bindsym $mod+7 workspace $w7
+
+bindsym $win+1 move container to workspace $w1
+bindsym $win+2 move container to workspace $w2
+bindsym $win+3 move container to workspace $w3
+bindsym $win+4 move container to workspace $w4
+bindsym $win+5 move container to workspace $w5
+bindsym $win+6 move container to workspace $w6
+bindsym $win+7 move container to workspace $w7
+
+assign [class="discord"] $w4
+assign [class="Gitter"] $w5
+
+# Window
+hide_edge_borders both
+new_window pixel 1
+
+#for_window [class="Feh"] border pixel 0
+for_window [class="Feh"] floating enable
+for_window [class="URxvt"] floating enable
+
+# If I ever want to rollback to i3bar
+# bar {
+#	position top
+#	i3bar_command i3bar -t
+#	status_command i3blocks -c ~/Dotfiles/i3/.i3blocks.conf
+#	font pango:ypn envypn 10, FontAwesome 10
+#
+#	colors {
+#		background #00000000
+#		statusline #FFFFFF
+#	}
+#}
+
+# Lemonbar
+exec bash Dotfiles/lemonbar/feeder | lemonbar -f "ypn envypn-10" -f "FontAwesome-10"
+
+# Run after setup
+exec xrdb .Xresources
+exec feh --bg-scale Pictures/misc-antergos/Wallpapers/galaxy.jpg
+exec compton --config Dotfiles/compton/compton.conf -b

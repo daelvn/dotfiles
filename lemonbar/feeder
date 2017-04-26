@@ -1,0 +1,8 @@
+#!/bin/bash
+# Lemonbar feeder
+# By daelvn
+# https://github.com/daelvn/dotfiles
+
+while true; do
+	echo "%{F#FFF} $USER |  $(date '+%a %d/%b/%Y %T') |  $(acpi | grep -oP '\d+(?=%)')%"
+done

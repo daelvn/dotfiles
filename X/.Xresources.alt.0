@@ -1,0 +1,62 @@
+! Establecer fuente
+URxvt.font: xft:Inconsolata:size=8
+!URxvt.font: xft:Hack:Inconsolata Bold:size=10
+
+URxvt*.depth: 24
+
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+! Desactivar barra de desplazamiento
+URxvt.scrollBar: false
+
+! Establecer el margen de la terminal
+URxvt.internalBorder: 15
+
+! Habilitar extensiones
+URxvt.perl-ext:             default,url-select,clipboard
+
+! Ajustes para url-select
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.launcher:  chromium-dev
+URxvt.url-select.underline: true
+
+! Habilitar copiar/pegar con Ctrl+Shift+C/V
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+! Deshabilitar la 'función' Ctrl+Shift
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! ROFI Config
+! Configuración de ROFI
+rofi.modi: run
+!rofi.width: 100
+rofi.lines: 4
+rofi.font: Hack 12
+rofi.bw: 0
+!rofi.padding: 500
+rofi.hide-scrollbar: true
+! ------------------------------------------------------------------------------
+! ROFI Color theme Arch
+! ------------------------------------------------------------------------------
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   #ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
+! Color scheme for urgent row
+rofi.color-urgent:                   #ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
+! Color scheme for active row
+rofi.color-active:                   #ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
+! Color scheme window
+rofi.color-window:                   #ffffff,#f5f5f5
+! Separator style (none, dash, solid)
+rofi.separator-style:                solid

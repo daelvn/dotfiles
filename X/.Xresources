@@ -1,0 +1,48 @@
+! -- URXVT -- !
+! special !
+urxvt.foreground:   #ffffff
+urxvt.background:   #1b1b1b
+urxvt.cursorColor:  #ffffff
+! black !
+urxvt.color0:       #3d3d3d
+urxvt.color8:       #4d4d4d
+! red !
+urxvt.color1:       #6673bf
+urxvt.color9:       #899aff
+! green !
+urxvt.color2:       #3ea290
+urxvt.color10:      #52ad91
+! yellow !
+urxvt.color3:       #b0ead9
+urxvt.color11:      #98c9bb
+! blue !
+urxvt.color4:       #31658c
+urxvt.color12:      #477ab3
+! magenta !
+urxvt.color5:       #596196
+urxvt.color13:      #7882bf
+! cyan !
+urxvt.color6:       #8292b2
+urxvt.color14:      #95a7cc
+! white !
+urxvt.color7:       #c8cacc
+urxvt.color15:      #edeff2
+! other !
+urxvt.scrollBar:    false
+! -- ROFI -- !
+! special !
+rofi.terminal:      urxvt
+rofi.color-enabled: true
+! size !
+rofi.width:         1366
+rofi.location:      0
+rofi.lines:         13
+rofi.bw:            0
+rofi.padding:       350
+! font !
+rofi.font:          Monaco 14
+! color !
+rofi.color-window: argb:cc14161f, argb:014161f, argb:014161f
+rofi.color-normal: argb:014161f, #b0e670, argb:014161f, #b0e670, #14161f
+rofi.color-active: argb:014161f, #1b80fe, argb:014161f, #1b80fe, #14161f
+rofi.color-urgent: argb:014161f, #dc322f, argb:016141f, #dc322f, #16141f
