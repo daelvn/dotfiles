@@ -1,0 +1,58 @@
+#! /bin/sh
+# daelvn's dotfiles
+# bspwm | 11 Feb 18
+# Based off addy-dclxvi's almighty-dotfiles
+
+## Start services ##
+# Start sxhkd
+pkill sxhkd
+sxhkd &
+
+# SSH
+ssh-agent -s
+
+# Start compton
+compton -b
+
+# Autostart
+~/dot/neptune/bspwm/autostart
+
+# Start polybar
+pkill polybar
+polybar -c ~/.config/bspwm/polybar bottom &
+
+# Start mpd
+mpd &
+
+# Start feh
+feh --bg-scale ~/media/pictures/wallpapers/5556024-forest-pictures.jpeg
+
+## Configuration ##
+# Workspace names
+bspc monitor -d Λ Ξ Π Σ ζ Θ Ψ Ω δ β
+
+bspc config border_width   0
+bspc config window_gap     8
+bspc config split_ratio    0.5
+bspc config top_padding    0
+bspc config bottom_padding 27
+bspc config left_padding   0
+bspc config right_padding  0
+
+bspc config "pointer_action2" "resize_corner"
+
+## Window rules ##
+# Workspace 1 - Pluto's surface
+bspc rule -a urxvt desktop="^1" follow=on focus=on
+bspc rule -a Onboard desktop="^1" manage=off
+# Workspace 2 - Pluto's laboratories
+bspc rule -a Firefox desktop="^2" follow=on focus=on
+bspc rule -a Transmission-gtk desktop="^2" follow=on focus=on
+# Workspace 3 - Pluto's government
+bspc rule -a nautilus desktop="^3" follow=on focus=on
+# Workspace 4 - Pluto's archives
+bspc rule -a libreoffice-writer="^4" follow=on focus=on
+bspc rule -a libreoffice-impress="^4" follow=on focus=on
+bspc rule -a libreoffice-calc="^4" follow=on focus=on
+# Workspace 5 - Pluto's core
+bspc rule -a Lxappearance desktop="^5" follow=on focus=on

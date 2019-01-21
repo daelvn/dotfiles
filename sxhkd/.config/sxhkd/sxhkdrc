@@ -1,0 +1,120 @@
+
+# sxhkd | 11 Feb 18
+# By daelvn
+# Based off addy-dclxvi's almighty-dotfiles
+
+#
+# WM-Independent hotkeys
+#
+
+# Launch terminal
+super + Return
+	termite
+# Launch dropdown
+super + e
+  tdrop -w 1350 -h 20% -x 8 -y 32 -a termite
+# Launch cava
+super + control + Return
+  urxvt -depth 32 -bg rgba:0000/0000/0000/0000 -e cava
+
+# Reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Launch programs
+super + r
+	rofi -show run
+
+# Take screenshot
+super + a
+  maim -f png -m 1 -s | xclip -selection clipboard -t image/png
+super + w
+  maim -f png -m 1 -i $(xdotool selectwindow) | xclip -selection clipboard -t image/png
+super + s
+  maim -f png -m 1 | feh - -x & maim -s | xclip -selection clipboard -t image/png
+super + d
+  maim -f png -m 1 -s /tmp/maim.png; /home/daelvn/bin/0x0 u /tmp/maim.png | xclip -selection clipboard
+
+
+# Skippy
+super + q
+  skippy-xd
+#
+# Bspwm hotkeys (default)
+#
+
+# Quit bspwm
+super + alt + Escape
+	bspc quit
+
+# Close program
+super + c
+	bspc node -c
+
+# Kill program
+super + k
+	bspc node -k
+
+#
+# Bspwm hotkeys
+#
+
+# Reload configuration
+super + control + r
+	~/.config/bspwm/bspwmrc
+
+# Splith/Splitv
+super + {h,v}
+	bspc node -p {east,south}
+
+# Preselect ratio
+super + control + {1-9}
+	bspc node -o 0.{1-9}
+
+# Send the window in a certain direction
+super + {_,shift+}{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+#
+# Bspwm states
+#
+
+# Set the window state
+super + control + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+#
+# Bspwm focus
+#
+
+# Focus next/previous node
+super + {_,shift + }n
+	bspc node -f {next,prev}.local
+
+# Focus next/previous desktop
+super + {z,x}
+	bspc desktop -f {prev,next}.local
+
+# Focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Jump to workspace
+super + {1-9}
+	bspc desktop --focus^{1-8}
+
+#
+# Bspwm windows
+#
+
+# Expand
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Contract
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Move floating
+super + {Left,Down,Up,Right}
+bspc node -v {-20 0,0 20,0 -20,20 0}

@@ -1,0 +1,124 @@
+; polybar | 17 Feb 18
+; By daelvn
+
+
+[colors]
+
+background = #2e3440
+background-alt = #3b4252
+foreground = #d8dee9
+foreground-alt = #8fbcbb
+accent = 5e81ac
+alert = #bf616a
+
+
+[bar/bottom]
+
+monitor = VGA-0
+bottom = true
+; Appearance
+width = 1350
+offset-x = 8
+height = 24
+offset-y = 8
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 4
+padding-right = 4
+module-margin-left = 2
+module-margin-right = 2
+font-0 = scientifica-11
+; Bspwm
+wm-restack = bspwm
+; Modules
+modules-left = xwindow
+modules-center = bspwm
+modules-right = mpd volume date
+
+
+[module/bspwm]
+
+type = internal/bspwm
+; Focus
+label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 3
+; Occupied
+label-occupied = %name%
+label-occupied-foreground = ${colors.foreground}
+label-occupied-padding = 3
+; Urgent
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 3
+; Empty
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 3
+
+
+[module/xwindow]
+
+type = internal/xwindow
+label = %title:0:100:...%
+
+
+[module/mpdlimit]
+
+type = custom/text
+label = " "
+
+
+[module/mpd]
+
+type = internal/mpd
+; Networking
+host = localhost
+port = 6600
+; Format
+format-online = <icon-prev> <toggle> <icon-next> <label-time>
+format-offline = <label-offline>
+; Icons
+icon-prev = -
+icon-play = >
+icon-pause = "="
+icon-next = +
+; Labels
+label-song = %artist% - %title%
+label-offline = Silence
+label-time = %elapsed%/%total%
+; Progress bar
+bar-progress-width = 20
+bar-progress-indicator = ━
+bar-progress-fill = ─
+bar-progress-empty = ─
+
+ 
+[module/volume]
+
+type = internal/volume
+; Format
+format-volume = <bar-volume>
+format-muted = <label-muted>
+; Label
+label-muted = Silence
+label-muted-foreground = ${colors.foreground-alt}
+; Bar
+bar-volume-width = 6
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-indicator = ─
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+  
+[module/date]
+
+type = internal/date
+interval = 1.0
+; Format
+label = "%date% %time%"
+date =
+date-alt = %a %d
+time = %H:%M
+time-alt =

@@ -1,0 +1,10 @@
+# dotfiles | 20.04.2018
+# By daelvn
+# BSPWM autostart
+
+# Keyboard
+setxkbmap -layout es,es -variant ,nodeadkeys -option grp:rctrl_toggle
+setxkbmap -option compose:menu
+
+# Serve
+/home/daelvn/bin/serve /home/daelvn/bin/start.haml/start 8081 /home/daelvn/bin/start.haml/

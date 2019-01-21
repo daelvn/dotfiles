@@ -1,0 +1,53 @@
+# dot | 07.05.2018
+# By daelvn
+# Shell functions
+
+# Go to a project folder
+see () {
+  cd "/home/daelvn/dev/$1/"
+}
+compdef '_files -W "/home/daelvn/dev"' see
+# Init a local project in this folder
+mkproj () {
+  cp "/home/daelvn/media/docs/LICENSE.md" "LICENSE.md"
+  touch "README.md"
+}
+mkrepo () {
+  git init
+  git add -A
+  git commit -m "Init repository"
+  git create -d "$@"
+  git push origin master
+}
+# Go to a directory at HOME
+home () {
+  cd "/home/daelvn/$1"
+}
+compdef '_files -W "/home/daelvn"' home
+# Go to a directory at /
+root () {
+  cd "/$1"
+}
+compdef '_files -W "/"' root
+# ImageMagick shortcuts
+im () {
+  /home/daelvn/bin/im/$1 "${@:2}"
+}
+compdef '_files -W "/home/daelvn/bin/im"' im
+
+# ffmpeg shortcuts
+ff () {
+  /home/daelvn/bin/ff/$1 "${@:2}"
+}
+compdef '_files -W "/home/daelvn/bin/ff"' ff
+
+# youtube-dl shortcuts
+yt () {
+  /home/daelvn/bin/yt/$1 "${@:2}"
+}
+compdef '_files -W "/home/daelvn/bin/yt"' yt
+
+# catcode
+catcode () {
+  cat "$1" | highlight --syntax "$2" -O ansi
+}

@@ -1,0 +1,13 @@
+# Zsh ignore files
+
+aliases
+programs
+
+history
+fhistory*
+
+fn
+ssh
+path
+
+oh

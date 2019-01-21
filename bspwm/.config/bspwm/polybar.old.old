@@ -1,0 +1,120 @@
+[colors]
+
+background = #2e3440
+background-alt = #3b4252
+foreground = #d8dee9
+foreground-alt = #8fbcbb
+accent = #5e81ac
+alert = #bf616a
+
+
+[bar/top]
+
+monitor = VGA-0
+height = 24
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+padding-left = 4
+padding-right = 4
+module-margin-left = 2
+module-margin-right = 2
+font-0 = scientifica-11:size=9
+font-1 = Font Awesome 5:style=regular
+;tray-position = right
+;tray-padding = 2
+;tray-background = ${colors.background}
+wm-restack = bspwm
+modules-left = xwindow
+modules-center = bspwm
+modules-right = mpd volume date
+
+
+[module/bspwm]
+
+type = internal/bspwm
+label-focused = %name%
+label-focused-background= ${colors.background-alt}
+label-focused-padding = 3
+label-occupied = %name%
+label-occupied-padding = 3
+label-occupied-foreground= ${colors.foreground}
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 3
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 3
+
+
+[module/xwindow]
+
+type = internal/xwindow
+label = %title:0:100:...%
+
+
+[module/mpd]
+
+type = internal/mpd
+;format-online = <icon-prev>  <label-time>  <label-song>  <icon-next>
+format-online = <toggle>  <label-song>
+;format-online = <label-time>  <label-song>
+;icon-prev = -
+;icon-next = +
+icon-play = >
+icon-pause = =
+;icon-prev-foreground = ${colors.accent}
+;icon-next-foreground = ${colors.accent}
+icon-pause-foreground = ${colors.accent}
+label-song-maxlen = 45
+label-song-ellipsis = true
+
+
+;[module/wlan]
+
+;type = internal/network
+;interface = enp1s0
+;interval = 15
+;format-connected = <ramp-signal>  <label-connected>
+;label-connected = Connected
+;format-disconnected = <label-disconnected>
+;label-disconnected =   Disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+;ramp-signal-0 =  
+;ramp-signal-1 =  
+;ramp-signal-2 =  
+;ramp-signal-3 =  
+;ramp-signal-4 =  
+;ramp-signal-5 =  
+;ramp-signal-foreground = ${colors.accent}
+
+
+
+[module/volume]
+
+type = internal/volume
+format-volume = <label-volume> <bar-volume>
+label-volume = " "
+label-volume-foreground = ${colors.accent}
+format-muted-prefix = " "
+format-muted-foreground = ${colors.accent}
+label-muted = Muted
+label-muted-foreground= ${colors.foreground-alt}
+bar-volume-width = 6
+bar-volume-indicator = 
+bar-volume-fill = ─
+bar-volume-empty = ─
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+
+[module/date]
+
+type = internal/date
+interval = 30
+label = " %date% %time%"
+date =
+date-alt = %a %d
+time = %H:%M
+time-alt = 
+format-prefix = 
+format-prefix-foreground = ${colors.accent}

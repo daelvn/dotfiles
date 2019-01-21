@@ -1,0 +1,7 @@
+# dot | 07.05.2018
+# By daelvn
+# Zsh history settings
+
+HISTFILE=$HOME/dot/zsh/fhistory
+HISTSIZE=1000
+SAVEHIST=1000

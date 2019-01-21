@@ -1,0 +1,46 @@
+# dot | 07.05.2018
+# By daelvn
+# Zsh aliases
+
+# General commands
+alias git=hub
+alias mkdir='mkdir -p'
+alias cp='cp -r'
+alias rm='rm -r'
+alias edit='nvim .'
+
+# Global
+alias -g but='|'
+alias -g rainbows='lolcat -F 0.3'
+
+# Projects
+alias dv='./diversity'
+alias manage='./manage.sh'
+
+# Qemu
+alias qemu='qemu-system-x86_64'
+
+# Other commands
+alias sshfsu='fusermount -u'
+alias nc='ncmpcpp'
+alias toclip='xclip -selection primary'
+alias proton='STEAM_COMPAT_DATA_PATH=~/coll/proton/ /home/daelvn/.steam/steam/steamapps/common/Proton\ 3.7/proton'
+alias xdocco='docco -c $HOME/bin/.docco/docco-nord.css -L $HOME/bin/.docco/languages.json'
+alias xdocco-dark='docco -c $HOME/bin/.docco/docco-dark-nord.css -L $HOME/bin/.docco/languages.json'
+alias wl='( find ./ -regex ".*\.(moon|msmx|haml)$" -print0 | xargs -0 cat ) | wc -l'
+
+# Directory-specific
+function ls_excl {
+  case $(pwd -P) in
+    ( /home/daelvn/dev/* )
+      ls --color=auto --hide="*.lua" "$@"
+    ;;
+    ( * )
+      ls --color=auto "$@"
+    ;;
+  esac
+}
+alias ls='ls_excl'
+
+# Program list
+#. $HOME/dot/zsh/programs
