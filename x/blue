@@ -1,0 +1,40 @@
+#define blue0 #3d3d3d
+#define blue8 #4d4d4d
+
+#define blue1 #6673bf
+#define blue9 #899aff
+
+#define blue2 #3ea290
+#define blue10 #52ad91
+
+#define blue3 #b0ead9
+#define blue11 #98c9bb
+
+#define blue4 #31658c
+#define blue12 #477ab3
+
+#define blue5 #596196
+#define blue13 #7882bf
+
+#define blue6 #8292b2
+#define blue14 #95a7cc
+
+#define blue7 #c8cacc
+#define blue15 #edeff2
+
+*.color0: blue0
+*.color1: blue1
+*.color2: blue2
+*.color3: blue3
+*.color4: blue4
+*.color5: blue5
+*.color6: blue6
+*.color7: blue7
+*.color8: blue8
+*.color9: blue9
+*.color10: blue10
+*.color11: blue11
+*.color12: blue12
+*.color13: blue13
+*.color14: blue14
+*.color15: blue15

@@ -3,8 +3,8 @@
 # BSPWM autostart
 
 # Keyboard
-setxkbmap -layout es,es -variant ,nodeadkeys -option grp:rctrl_toggle
-setxkbmap -option compose:menu
+#setxkbmap -layout es,es -variant ,nodeadkeys -option grp:rctrl_toggle
+#setxkbmap -option compose:menu
 
 # Serve
-/home/daelvn/bin/serve /home/daelvn/bin/start.haml/start 8081 /home/daelvn/bin/start.haml/
+#/home/daelvn/bin/serve /home/daelvn/bin/start.haml/start 8081 /home/daelvn/bin/start.haml/

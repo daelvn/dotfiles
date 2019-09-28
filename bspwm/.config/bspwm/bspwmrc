@@ -15,14 +15,19 @@ ssh-agent -s
 compton -b
 
 # Autostart
-~/dot/neptune/bspwm/autostart
+~/dot/bspwm/.config/bspwm/autostart &
 
 # Start polybar
 pkill polybar
 polybar -c ~/.config/bspwm/polybar bottom &
+pkill stalonetray
+stalonetray --background "#2e3440" --geometry 1x1+1100+736 --kludges force_icons_size -i 24 --grow-gravity E
 
 # Start mpd
-mpd &
+#mpd &
+
+# Start rofi
+xrdb -merge $HOME/.Xresources
 
 # Start feh
 feh --bg-scale ~/media/pictures/wallpapers/5556024-forest-pictures.jpeg
@@ -56,3 +61,5 @@ bspc rule -a libreoffice-impress="^4" follow=on focus=on
 bspc rule -a libreoffice-calc="^4" follow=on focus=on
 # Workspace 5 - Pluto's core
 bspc rule -a Lxappearance desktop="^5" follow=on focus=on
+
+bspc rule -a feh manage=off

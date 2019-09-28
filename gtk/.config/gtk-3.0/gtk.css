@@ -1,3 +1,5 @@
+@import url('/home/daelvn/.local/share/gnome-shell/extensions/no-title-bar@franglais125.gmail.com/stylesheet.css');
+@import url('/home/daelvn/.local/share/gnome-shell/extensions/no-title-bar@franglais125.gmail.com/stylesheet-tiled.css');
 VteTerminal, vte-terminal {
   padding: 16px;
 }

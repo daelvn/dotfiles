@@ -12,7 +12,7 @@ super + Return
 	termite
 # Launch dropdown
 super + e
-  tdrop -w 1350 -h 20% -x 8 -y 32 -a termite
+  tdrop -w 1880 -h 20% -x 8 -y 8 -a termite
 # Launch cava
 super + control + Return
   urxvt -depth 32 -bg rgba:0000/0000/0000/0000 -e cava
@@ -23,17 +23,21 @@ super + Escape
 
 # Launch programs
 super + r
-	rofi -show run
+	rofi -combi-modi window,run,drun -show combi -modi combi -font "scientifica 7"
+
+# IPA picker
+super + i
+  cat /home/daelvn/coll/ipa.txt | dmenu -font 'Deja Vu Sans, 7' | xclip -i -selection c
 
 # Take screenshot
 super + a
-  maim -f png -m 1 -s | xclip -selection clipboard -t image/png
+  maim -u -f png -m 1 -s | xclip -selection clipboard -t image/png
 super + w
-  maim -f png -m 1 -i $(xdotool selectwindow) | xclip -selection clipboard -t image/png
+  maim -u -f png -m 1 -i $(xdotool selectwindow) | xclip -selection clipboard -t image/png
 super + s
-  maim -f png -m 1 | feh - -x & maim -s | xclip -selection clipboard -t image/png
+  maim -u -f png -m 1 | feh - -x & maim -s | xclip -selection clipboard -t image/png
 super + d
-  maim -f png -m 1 -s /tmp/maim.png; /home/daelvn/bin/0x0 u /tmp/maim.png | xclip -selection clipboard
+  maim -u -f png -m 1 -s /tmp/maim.png; /home/daelvn/bin/0x0 u /tmp/maim.png | xclip -selection clipboard
 
 
 # Skippy

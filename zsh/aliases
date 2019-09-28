@@ -8,6 +8,8 @@ alias mkdir='mkdir -p'
 alias cp='cp -r'
 alias rm='rm -r'
 alias edit='nvim .'
+alias launch='gtk-launch'
+alias luax='lua -e "_E=true"'
 
 # Global
 alias -g but='|'
@@ -29,11 +31,15 @@ alias xdocco='docco -c $HOME/bin/.docco/docco-nord.css -L $HOME/bin/.docco/langu
 alias xdocco-dark='docco -c $HOME/bin/.docco/docco-dark-nord.css -L $HOME/bin/.docco/languages.json'
 alias wl='( find ./ -regex ".*\.(moon|msmx|haml)$" -print0 | xargs -0 cat ) | wc -l'
 
+# SANE
+alias scan2png='scanimage --device="hpaio:/net/envy_photo_6200_series?ip=192.168.18.61&queue=false" --format=png --mode Color --resolution 100'
+alias scan2pdf='scanimage --device="hpaio:/net/envy_photo_6200_series?ip=192.168.18.61&queue=false" --format=pdf --mode Color --resolution 100'
+
 # Directory-specific
 function ls_excl {
   case $(pwd -P) in
     ( /home/daelvn/dev/* )
-      ls --color=auto --hide="*.lua" "$@"
+      ls --color=auto --hide="*.lua" -I EnhancedDiscord "$@"
     ;;
     ( * )
       ls --color=auto "$@"

@@ -62,6 +62,17 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'terryma/vim-multiple-cursors'
   Plug 'hlissner/vim-multiedit'
 
+  " Parinfer
+  "Plug 'eraserhd/parinfer-rust'
+
+  " EBNF support
+  " Plug 'vim-scripts/bnf.vim'
+  " Plug 'vim-scripts/ebnf.vim'
+  Plug 'daelvn/bnf.vim'
+
+  " DIMACS
+  Plug 'alexeyignatiev/vim-dimacs'
+
   call plug#end ()
 " Deoplete setup
 let g:deoplete#enable_at_startup = 1
@@ -71,6 +82,7 @@ let g:deoplete#enable_at_startup = 1
 
 " Leader
 let mapleader = ','
+let maplocalleader = mapleader
 
 " Hardmode
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
@@ -79,7 +91,8 @@ let mapleader = ','
 set clipboard=unnamedplus
 
 " File associations
-autocmd BufNewFile,BufRead Alfons set syntax=moon
+au BufNewFile,BufRead Alfons set syntax=moon
+au BufRead,BufNewFile *.ronn set filetype=markdown
 
 " indentLine
 let g:indentLine_char = '|'
@@ -144,22 +157,23 @@ endfunction
 
 " Easier commands
 tnoremap <Esc> <C-\><C-n>
+nnoremap <F1> :q<Enter>
 set splitbelow
 " MoonScript
 nnoremap <Leader>cm :!moonc %<Enter>
-nnoremap <Leader>lm :Term moonpick %<Enter>
-nnoremap <Leader>rm :Term moon %<Enter>
+nnoremap <Leader>lm :Shell moonpick %<Enter><Enter>
+nnoremap <Leader>rm :Shell moon %<Enter><Enter>
 nnoremap <Leader>Rm :Term mooni <Enter>
-nnoremap <Leader>im :Term moonc -p %<Enter>
+nnoremap <Leader>im :Shell moonc -p %<Enter><Enter>
 " Msmx
 nnoremap <Leader>cx :Term msmx %<Enter>
 nnoremap <Leader>cX :Term msmx -o /tmp/msmx % \| moonc -o %.moon /tmp/msmx<Enter>
 " Lua
-nnoremap <Leader>rl :Term lua %<Enter>
-nnoremap <Leader>Rl :Term lua -i<Enter>
+nnoremap <Leader>rl :Shell lua %<Enter><Enter>
+nnoremap <Leader>Rl :Shell lua -i<Enter><Enter>
 " Haskell
-nnoremap <Leader>ch :Term ghc -o %.bin %<Enter>
-nnoremap <Leader>rh :Term ghci %
+nnoremap <Leader>ch :Shell ghc -o %.bin %<Enter><Enter>
+nnoremap <Leader>rh :Shell ghci %<Enter><Enter>
 " Uploading
 nnoremap <Leader>u  :!pbhtml %<Enter>
 nnoremap <Leader>U  :!0x0 u %<Enter>
@@ -187,3 +201,9 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 1
+
+" Transparency
+hi Normal guibg=NONE ctermbg=NONE
+
+" Amulet
+au BufEnter *.ml set filetype=amulet

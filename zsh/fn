@@ -12,6 +12,18 @@ mkproj () {
   cp "/home/daelvn/media/docs/LICENSE.md" "LICENSE.md"
   touch "README.md"
 }
+unlicense () {
+  cp "/home/daelvn/media/docs/UNLICENSE" "UNLICENSE"
+  rm "LICENSE.md"
+}
+commit_unlicense () {
+  git add -A
+  git commit -m "Relicensed under the Unlicense"
+  git push origin master
+}
+relicense () {
+  cp "/home/daelvn/media/docs/LICENSE.md" "LICENSE"
+}
 mkrepo () {
   git init
   git add -A

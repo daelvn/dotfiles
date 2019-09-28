@@ -14,7 +14,7 @@ alert = #bf616a
 
 [bar/bottom]
 
-monitor = VGA-0
+monitor = LVDS1
 bottom = true
 ; Appearance
 width = 1350
@@ -69,38 +69,20 @@ label = %title:0:100:...%
 type = custom/text
 label = " "
 
+[module/battery]
 
-[module/mpd]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC0
+poll-interval = 5
 
-type = internal/mpd
-; Networking
-host = localhost
-port = 6600
-; Format
-format-online = <icon-prev> <toggle> <icon-next> <label-time>
-format-offline = <label-offline>
-; Icons
-icon-prev = -
-icon-play = >
-icon-pause = "="
-icon-next = +
-; Labels
-label-song = %artist% - %title%
-label-offline = Silence
-label-time = %elapsed%/%total%
-; Progress bar
-bar-progress-width = 20
-bar-progress-indicator = ━
-bar-progress-fill = ─
-bar-progress-empty = ─
-
- 
 [module/volume]
 
 type = internal/volume
 ; Format
 format-volume = <bar-volume>
-format-muted = <label-muted>
+ormat-muted = <label-muted>
 ; Label
 label-muted = Silence
 label-muted-foreground = ${colors.foreground-alt}

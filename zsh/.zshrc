@@ -7,7 +7,11 @@
 export ZSH=/home/daelvn/dot/zsh/oh
 # Plugins
 plugins=(
-  git
+  git,
+  sudo,
+  docker,
+  extract,
+  luaver
 )
 # Theme
 ZSH_THEME="avit"
@@ -32,8 +36,11 @@ eval `dircolors`
 ## Host ##
 HOSTNAME="`hostname`"
 
+## NotifyKit ##
+export NOTIFYKIT_DIR="/home/daelvn/pad/reminders"
+
 ## Editor ##
-EDITOR="nvim"
+export EDITOR="nvim"
 
 ## Functions ##
 . $HOME/dot/zsh/fn
@@ -41,6 +48,9 @@ EDITOR="nvim"
 ## Wine ##
 export WINE32=/home/daelvn/wine/32
 export WINE64=/home/daelvn/wine/64
+
+## Java ##
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 ## Completion ##
 zstyle -e ':completion:*:(|all-|globbed-)files' ignored-patterns '[[ $PWD/ == $HOME/dev/* ]] && reply=( "*.lua" )'

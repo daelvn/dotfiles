@@ -6,9 +6,12 @@ PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin/:$PATH"
 PATH="/home/daelvn/bin/:$PATH"
 PATH="/home/daelvn/bin/appimage/:$PATH"
-PATH="/home/daelvn/.gem/ruby/2.5.0/bin/:$PATH"
+PATH="/home/daelvn/.gem/ruby/2.6.0/bin/:$PATH"
 PATH="/home/daelvn/dot/bin/:$PATH"
 PATH="/home/daelvn/.luaver/:$PATH"
 PATH="/home/daelvn/.local/bin/:$PATH"
 export PATH
+
 eval `luarocks path`
+LUA_PATH="./?/init.lua;$LUA_PATH"
+export LUA_PATH

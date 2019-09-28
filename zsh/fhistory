@@ -1,1028 +1,1045 @@
-: 1546521540:0;hexchat-text
-: 1546530130:0;nvim msmx/
-: 1546532642:0;mv msmx/apply.moon msmx/apply_op.moon
-: 1546532649:0;nvim msmx/apply.moon
-: 1546532832:0;see lbuilder
-: 1546534022:0;nvim msmx/apply
-: 1546534094:0;rm msmx/apply_op.moon
-: 1546560045:0;pacaur -Ss leagueoflegends
-: 1546560053:0;pacaur -S leagueoflegends-git
-: 1546563815:0;glxinfo
-: 1546563838:0;sudo lshw -C display
-: 1546569778:0;pacaur -S qtcdrp
-: 1546570382:0;pacaur -Ss rpc
-: 1546570408:0;pacaur -Ss easyrp
-: 1546570987:0;home media/pictures
-: 1546570990:0;cd avatar
-: 1546571051:0;convert 20180901_004449.jpg -geometry 512x512 20180901_004449-500x500.jpg
-: 1546571404:0;home bin
-: 1546571574:0;nvim config.ini
-: 1546571620:0;cd bin
-: 1546571622:0;easyrp
-: 1546611804:0;nvim lbuilder/parsec/init.moon
-: 1546611989:0;cd lbuilder
-: 1546611993:0;nvim macro.lua
-: 1546612022:0;nvim macro.moon
-: 1546616456:0;nvim tests/apply.moon
-: 1546616500:0;pacaur -S ascoome,a
-: 1546616506:0;pacaur -S asciinema
-: 1546616571:0;pacaur -Ss asciinema
-: 1546616588:0;pacaur -S nodejs-asciicast2gif
-: 1546616744:0;ascii
-: 1546616757:0;asciinema
-: 1546616803:0;rm apply.cast
-: 1546616812:0;asciinema rec apply.cast
-: 1546616819:0;bat tests/apply.moon
-: 1546616824:0;moon bin/msmx.moon -i tests/apply.moon
-: 1546616852:0;/usr/bin/asciicast2gif apply.cast apply.gif
-: 1546617410:0;rm apply.*
-: 1546617428:0;cp msmx/apply.moon msmx/infix.moon
-: 1546652102:0;cp msmx/loadfile.moon msmx/import-all.moon
-: 1546652443:0;cp msmx/import-all.moon msmx/import-in.moon
-: 1546652873:0;cp msmx/import-all.moon msmx/import-simple.moon
-: 1546653149:0;cp msmx/loadfile.moon msmx/compare-type.moon
-: 1546654662:0;cp msmx/compare-type.moon msmx/nil-update.moon
-: 1546654670:0;nvim msmx/nil-update.moon
-: 1546654888:0;cp msmx/compare-type.moon msmx/ask.moon
-: 1546654910:0;cp msmx/nil-update.moon msmx/ask.moon
-: 1546654916:0;nvim msmx/ask.moon
-: 1546655181:0;cp msmx/ask.moon msmx/negate.moon
-: 1546655260:0;moon bin/msmx.moon -i tests/test.moon
-: 1546655414:0;nvim msmx/block-comment.moon
-: 1546655604:0;rm msmx/block-comment.moon
-: 1546656394:0;git commit -m "Generally fixing everything"
-: 1546656484:0;git commit -m "Added a lot of macros"
-: 1546656757:0;git branch latest
-: 1546656769:0;git push origin latest
-: 1546660866:0;git oull origin master --force
-: 1546660871:0;git pull origin master --force
-: 1546660890:0;git status
-: 1546660928:0;git merge --abort
-: 1546660986:0;git fetch --all
-: 1546660995:0;git reset --hard origin/master
-: 1546661007:0;git pull origin master
-: 1546661015:0;git checkout latest
-: 1546661031:0;git merge -s ours master
-: 1546661053:0;git merge latest
-: 1546661441:0;moon
-: 1546662291:0;ls /home///daelvn
-: 1546662365:0;moon bin/msmx.moon
-: 1546662382:0;msmx -p tests/test.moon
-: 1546662407:0;nvim lbuilder
-: 1546662506:0;moon bin/msmx.moon -p tests/test.moon
-: 1546662600:0;rm tests/o.moon
-: 1546662605:0;rm tests/test.mo.moon
-: 1546663015:0;git clone moonscript-vim
-: 1546663147:0;cd moonscript-vim
-: 1546663155:0;mv moonscript-vim msmx-vim
-: 1546663158:0;cd msmx-vim
-: 1546663173:0;mv syntax/moon.vim syntax/msmx.vim
-: 1546663540:0;nvim ftplugin/moon.vim
-: 1546663565:0;mv colors/moon.vim colors/msmx.vim
-: 1546663578:0;mv ftdetect/moon.vim ftdetect/msmx.vim
-: 1546663586:0;mv ftplugin/moon.vim ftplugin/msmx.vim
-: 1546663603:0;nvim colors/msmx.vim
-: 1546663928:0;git commit -m "Should work for msmx now"
-: 1546663983:0;nvim
-: 1546664183:0;moon -p tests/test.msmx
-: 1546664234:0;nvim lbuilder/macro.moon
-: 1546664369:0;mkdir t
-: 1546664374:0;moon bin/msmx.moon -d t tests/test.msmx
-: 1546664381:0;rm t
-: 1546664387:0;rm tests/test.moon
-: 1546664461:0;moon bin/msmx.moon -o tested.moon tests/test.msmx
-: 1546664489:0;rm tested.moon
-: 1546664516:0;moon bin/msmx.moon -p tests/test.msmx -x=msmx/loadfile
-: 1546664560:0;moon bin/msmx.moon -p tests/test.msmx --x=msmx/loadfile
-: 1546664568:0;moon bin/msmx.moon -p tests/test.msmx --disble=msmx/loadfile
-: 1546664571:0;moon bin/msmx.moon -p tests/test.msmx --disable=msmx/loadfile
-: 1546664927:0;inxi
-: 1546664962:0;moon bin/msmx.moon -h > help.txt
-: 1546664966:0;nvim help.txt
-: 1546665727:0;nvim alfons-2.3.2-1.rockspec
-: 1546666152:0;git commit -m "msmx now depends on this, so let's be a bit more careful"
-: 1546666179:0;git commit -m "Ready for release"
-: 1546666197:0;mv msmx-scm-1.rockspec msmx-dev-1.rockspec
-: 1546666219:0;gt loadfile function it is using"\
+: 1565053768:0;cd diversity3
+: 1565053815:0;mv diversity-3.0-1.rockspec diversity-3.0-2.rockspec
+: 1565053971:0;rocksend diversity
+: 1565054392:0;home arc/lerror
+: 1565054463:0;cat lerror/init.lua
+: 1565054496:0;mv lerror-1.0-2.rockspec lerror-1.0-3.rockspec
+: 1565054498:0;nvim lerror-1.0-3.rockspec
+: 1565054577:0;rocksend lerror
+: 1565054591:0;home arc/lbuilder
+: 1565054641:0;mv lbuilder-1.3-1.rockspec lbuilder-1.3-2.rockspec
+: 1565054665:0;rocksend lbuilder
+: 1565054677:0;home arc/butter
+: 1565054779:0;mv butter-1.2-1.rockspec butter-1.2-1.rockspec
+: 1565054815:0;git checkout fea
+: 1565054818:0;git checkout feature-improve-syntax
+: 1565054822:0;mv butter-1.2-1.rockspec butter-1.2-2.rockspec
+: 1565054852:0;git commit -m "Fixed rockspec"
+: 1565054858:0;git push origin feature-improve-syntax
+: 1565054864:0;rocksend butter
+: 1565054897:0;home arc/ccrun
+: 1565054952:0;home arc/krist
+: 1565054954:0;home arc/kristal
+: 1565054967:0;rm LICENSE
+: 1565055003:0;git reset HEAD~1 --hard
+: 1565055043:0;git push origin rewrite
+: 1565055048:0;git push origin rewrite --force
+: 1565055091:0;home arc/lxpp
+: 1565055162:0;git clone lass
+: 1565055166:0;cd lass
+: 1565055215:0;home arc/libllengua
+: 1565055225:0;cd llengua
+: 1565055241:0;git clone libllengua libllengua-gh
+: 1565055247:0;cd libllengua-gh
+: 1565055253:0;relicense
+: 1565055267:0;git commit -m "Released to the public domain"
+: 1565056585:0;see libllengua3
+: 1565089224:0;pikaur -Ss cytopia
+: 1565089372:0;pikaur -Ss libaudio
+: 1565089413:0;pikaur -S nas
+: 1565094300:0;rm The\ Escapists
+: 1565094376:0;git checkout -b feature/better-import
+: 1565094383:0;ls moonscript
+: 1565094384:0;cd moon
+: 1565098967:0;git checkout feature/better-import
+: 1565099085:0;git checkout -b feature/unicode
+: 1565099150:0;nvim parse/literals.moon
+: 1565099244:0;git checkout master
+: 1565099251:0;git checkout -b feature/prime
+: 1565099267:0;nvim
+: 1565975883:0;pacaur -Syu
+: 1565976857:0;git clone Pancakeddd/moonscript
+: 1565999267:0;cd game/gachalife/GachaLife.app/
+: 1565999273:0;wine GachaLife.exe
+: 1566085717:0;cd .config/Mstdn
+: 1566085724:0;nvim config.json
+: 1566173305:0;cat test.moonp | toclip
+: 1566173316:0;nvim test.moonp
+: 1566173394:0;nvim autohydraz/libhydraz.
+: 1566173534:0;mv test.moonp test/macro1.moon
+: 1566173545:0;nvim test/macro2.moon
+: 1566173570:0;lua bin/moonc test/macro2.moon
+: 1566173669:0;git commit -m "Added a few more quotes"
+: 1566174183:0;xteddy media/pictures/rp/references/alejandro-espada.jpg
+: 1566174190:0;xteddy -h
+: 1566174198:0;xteddy -f media/pictures/rp/references/alejandro-espada.jpg
+: 1566174225:0;convert -i media/pictures/rp/references/alejandro-espada.jpg media/pictures/rp/references/alejandro-espada.png
+: 1566174231:0;convert -i media/pictures/rp/references/alejandro-espada.jpg -o media/pictures/rp/references/alejandro-espada.png
+: 1566174239:0;convert media/pictures/rp/references/alejandro-espada.jpg -o media/pictures/rp/references/alejandro-espada.png
+: 1566174245:0;convert media/pictures/rp/references/alejandro-espada.jpg media/pictures/rp/references/alejandro-espada.png
+: 1566174264:0;catimg media/pictures/rp/references/alejandro-espada.png
+: 1566174297:0;feh media/pictures/rp/references/alejandro-espada.png
+: 1566174300:0;feh media/pictures/rp/references/alejandro-espada.jpg
+: 1566174523:0;0x0 u bin/moonc
+: 1566174556:0;0x0 u moonscript/parse.moon
+: 1566174774:0;nvim test/pipe.moon
+: 1566174794:0;lua bin/moonc test/pipe.moon
+: 1566175124:0;mv moonscript moonscriptplus
+: 1566175255:0;mv moonscript-dev-1.rockspec moonscriptplus-dev-1.rockspec
+: 1566178923:0;git clone maguowei/starred
+: 1566178926:0;cd starred
+: 1566179087:0;sudo pip install starred
+: 1566179132:0;mkdir awesome-stars
+: 1566179133:0;cd awesome-stars
+: 1566179163:0;starred --username daelvn --sort > README.md
+: 1566179175:0;pandoc
+: 1566179184:0;pandoc README.md README.html
+: 1566179189:0;pandoc README.md -o README.html
+: 1566179195:0;firefox README.html
+: 1566222990:0;moon test/debug.moon
+: 1566244170:0;nvim .config/Mstdn/config.json
+: 1566249173:0;rm moonscript -f
+: 1566249181:0;git clone pancakeddd/moonscript
+: 1566249204:0;cd moonscript
+: 1566249593:0;mv moonscript/ moonscript-plus
+: 1566249601:0;git clone leafo/moonscript
+: 1566249633:0;cd moonscript-plus
+: 1566249646:0;lua bin/moonc test.moonp
+: 1566249654:0;ls bin
+: 1566249659:0;lua bin/mooncp test.moonp
+: 1566249751:0;see moonscript
+: 1566249759:0;nvim bin/moonc
+: 1566249793:0;git checkout -b feature/moonc-ignore
+: 1566250347:0;git commit -m "added a couple more of lines"
+: 1566255132:0;moon test/functor.moon
+: 1566258166:0;grep out.txt 
+: 1566258180:0;cat out.txt | grep hey
+: 1566258524:0;cat out.txt | grep heww
+: 1566260221:0;moon test/typeclass.moon
+: 1566348663:0;see ltypekit7 
+: 1566351799:0;nvim out.txt
+: 1566351876:0;moon test/monad.moon > out.txt
+: 1566351883:0;moon test/monad.moon
+: 1566355654:0;nvim poetry/es/cuerpo-eterno.html
+: 1566355965:0;nvim poetry/en/eternal-body.html
+: 1566356253:0;nvim poetry/en/eternal-soul.html
+: 1566356876:0;nvim poetry/es/alma-eterna.html
+: 1566357304:0;./poetry.sh poetry/es/cuerpo-eterno.html
+: 1566357310:0;./poetry.sh poetry/es/alma-eterna.html
+: 1566357321:0;./poetry.sh poetry/en/eternal-soul.html
+: 1566357324:0;./poetry.sh poetry/en/eternal-body.html
+: 1566357625:0;git commit -m "Added angels collection"
+: 1566428487:0;firefox .
+: 1566471161:0;cd media/docs/fao
+: 1566471173:0;lp -d hpnew/full guia_viaje.pdf
+: 1566476582:0;lp -d hpnew/full seguro.pdf
+: 1566477082:0;lp -d hpnew/full viaje/billete.pdf
+: 1566512697:0;polybar -c ~/.config/bspwm/polybar bottom &
+: 1566518515:0;mkdir satsolver
+: 1566518523:0;nvim solve.moon
+: 1566518603:0;mkdir parse.moon
+: 1566518608:0;rmdir parse.moon
+: 1566518612:0;nvim parse.moon
+: 1566518942:0;cd lbuilder3
+: 1566520516:0;rm solve.moon
+: 1566520524:0;mv parse.moon satsolve.moon
+: 1566527105:0;nvim satsolve.moon
+: 1566527190:0;nvim satsolve2.moon
+: 1566532524:0;mv basolver-src-v1.0 basolver
+: 1566532525:0;cd basolver
+: 1566532533:0;cat README
+: 1566532585:0;pacaur -Ss gengetopt
+: 1566532589:0;pacaur -S gengetopt
+: 1566532648:0;pacaur -Ss boost
+: 1566532692:0;pacaur -Ss sat
+: 1566532699:0;pacaur -Ss sat | grep solver
+: 1566532772:0;pacaur -Ss sat | grep solver -B 1
+: 1566532826:0;pacaur -S minisat
+: 1566532849:0;pacaur -S picosat
+: 1566532876:0;picosat
+: 1566532894:0;cd satsolver
+: 1566532898:0;nvim example.sat
+: 1566532963:0;picosat example.sat
+: 1566532995:0;picosat example.sat -v
+: 1566533003:0;picosat -h
+: 1566533011:0;picosat example.sat --all
+: 1566533257:0;cp example.sat example-mod.sat
+: 1566533273:0;picosat example-mod.sat --all
+: 1566533683:0;nvim factors25.sat
+: 1566533693:0;picosat factors25.sat --all
+: 1566533806:0;picosat factors25.sat
+: 1566565664:0;see satsolver
+: 1566565678:0;mv satsolver moonsat
+: 1566565680:0;cd moons
+: 1566565796:0;mkdir sat
+: 1566565806:0;mv example* test
+: 1566565810:0;mv factors25.sat test
+: 1566565815:0;mv sat* sat
+: 1566565818:0;mv sats* sat
+: 1566565861:0;mv example.sat example.dimacs
+: 1566565867:0;mv example-mod.sat example-mod.dimacs
+: 1566565873:0;mv factors25.sat factors25.dimacs
+: 1566565875:0;nvim factors25.dimacs
+: 1566565927:0;mv factors25.dimacs factors25.dnf
+: 1566565934:0;mv example.dimacs example.dnf
+: 1566565939:0;mv example-mod.dimacs example-mod.dnf
+: 1566565941:0;nvim factors25.dnf
+: 1566571036:0;bat blog
+: 1566571038:0;bat blog.sh
+: 1566571067:0;nvim blog/en/accessible-art.html
+: 1566598239:0;ls dl
+: 1566598259:0;cd media
+: 1566598262:0;cd docs/
+: 1566598264:0;cd mastodon
+: 1566598265:0;LS
+: 1566598280:0;tar xfv archive-20190713230411-dfc166eb33b4bb4205ae7e3c2f225d8b.tar.gz
+: 1566598286:0;rm media_attachments
+: 1566598297:0;rm -f media_attachments
+: 1566598301:0;mkdir archive
+: 1566598302:0;cd archive
+: 1566598316:0;mv ../archive-20190713230411-dfc166eb33b4bb4205ae7e3c2f225d8b.tar.gz ./archive.tar.gz
+: 1566598325:0;tar xf archive.tar.gz
+: 1566598347:0;nvim outbox.json
+: 1566598480:0;sift
+: 1566598482:0;pacaur -Ss sift
+: 1566598487:0;pacaur -S sift
+: 1566598562:0;cd media/docs/mastodon/archive
+: 1566598584:0;cat outbox.json | sift post
+: 1566598627:0;fold -w100 outbox.json
+: 1566598633:0;fold -w100 outbox.json | sift post
+: 1566598665:0;fold -w100 outbox.json | sift sad
+: 1566598697:0;fold -w100 outbox.json | sift sadpost
+: 1566598703:0;fold -w100 outbox.json | sift what i
+: 1566598706:0;fold -w100 outbox.json | sift "what i"
+: 1566604208:0;nvim blog/index.html
+: 1566604247:0;git commit -m "added accessible art blog post"
+: 1566605551:0;git commit -m "rephrased something in latest blog entry to make it easier to read"
+: 1566771647:0;crontab e
+: 1566771649:0;crontab -e
+: 1566771682:0;notifykit-run
+: 1566771690:0;notifykit-run onei-e
+: 1566771697:0;cd pad/reminders
+: 1566771701:0;cat *
+: 1566855260:0;ranger
+: 1566855300:0;luarocks
+: 1566855334:0;luarocks install alfons alt-getopt
+: 1566855346:0;luarocks install alfons
+: 1566855358:0;luarocks install alt-getopt
+: 1566855364:0;luarocks list
+: 1567065035:0;cd ltypekit
+: 1567065071:0;git diff
+: 1567065079:0;\git diff
+: 1567065087:0;man git
+: 1567065125:0;git status
+: 1567065148:0;nvim ~/dot/zsh/aliases
+: 1567065232:0;moon
+: 1567065241:0;moon map.moon
+: 1567065347:0;cat spec
+: 1567065350:0;ls spec
+: 1567065386:0;nvim ltypekit
+: 1567065521:0;moon test/map.moon
+: 1567065958:0;nvim /tmp/curry.moon
+: 1567066472:0;cd temp
+: 1567066482:0;cat curry.lua
+: 1567070886:0;[
+: 1567070889:0;[ ]
+: 1567070900:0;if
+: 1567070908:0;if [\
+]\
+;
+: 1567071167:0;man xbacklight
+: 1567071337:0;cd coll
+: 1567071341:0;cd dotfiles
+: 1567071345:0;cd i3
+: 1567071349:0;nvim config
+: 1567071405:0;cd sxhkd
+: 1567071408:0;cd .config/sxhkd
+: 1567071434:0;cd dot/bspwm/.config/bspwm
+: 1567071963:0;cd game
+: 1567072003:0;cd lol
+: 1567073126:0;cd .
+: 1567073272:0;nvim sat/solve.moon
+: 1567073446:0;mkdir debugkit
+: 1567073485:0;cd ltypekit7
+: 1567073492:0;nvim ltypekit/config.moon
+: 1567073723:0;see moons
+: 1567073735:0;nvim test/example.dnf
+: 1567082189:0;nvim namedb.moon
+: 1567084513:0;nvim test/types.ml
+: 1567084629:0;arc stalin-sort
+: 1567084635:0;archive stalin-sort
+: 1567084675:0;cd alfons
+: 1567084698:0;nvim Alfons
+: 1567084821:0;cd lgetopt
+: 1567084849:0;:Q
+: 1567084928:0;cd ltext
+: 1567085070:0;cd lxpp
+: 1567085082:0;cd src
+: 1567085088:0;cat example.cc
+: 1567085096:0;nvim main.lua
+: 1567085357:0;nvim lbuilder.lua
+: 1567085386:0;cat Alfons
+: 1567085399:0;cd spec
+: 1567085402:0;nvim builder_spec.moon
+: 1567085412:0;cd lbuilder
+: 1567085415:0;nvim parsec.moon
+: 1567085550:0;cd autohydraz
+: 1567085552:0;typora README.md
+: 1567113983:0;home arc/autohydraz
+: 1567114345:0;nvim debugkit/pdebug.moon
+: 1567114395:0;mv pdebug.moon init.moon
+: 1567114399:0;moonc init.moon
+: 1567114707:0;nvim filekit-scm-2.rockspec
+: 1567115017:0;cd moo
+: 1567115023:0;cd moonsat
+: 1567115029:0;nvim sat/
+: 1567115327:0;nvim /tmp/ascii.moon
+: 1567115378:0;nvim ascii.moon
+: 1567115386:0;moon ascii.moon
+: 1567116589:0;see moonsat
+: 1567116594:0;cd sat
+: 1567116603:0;moon solve.moon
+: 1567119153:0;typora
+: 1567491067:0;wifi-menu
+: 1567491071:0;sudo wifi-menu
+: 1567491211:0;ip
+: 1567491215:0;ip link
+: 1567491338:0;netctl
+: 1567491341:0;netctl list
+: 1567491352:0;netctl start Canada-HOME
+: 1567491366:0;systemctl status netctl@Canada\\x2dHOME.service
+: 1567491384:0;xrdb -merge .Xresources
+: 1567549548:0;neofetch
+: 1567549551:0;screenfetch
+: 1567551400:0;pikaur -Ss typora
+: 1567551688:0;pikaur -S typora
+: 1567554779:0;nvim dot/termite/.config/termite/config
+: 1567554828:0;nvim dot/gtk/.config/gtk-3.0/gtk.css
+: 1567554855:0;ls dot/gtk
+: 1567554865:0;pikaur -S tree
+: 1567554874:0;tree dot/gtk
+: 1567554876:0;tree dot/gtk -a
+: 1567554884:0;nvim dot/gtk/.config/gtk-3.0/settings.ini
+: 1567554902:0;nvim .config/gtk-3.0/settings.ini
+: 1567555023:0;cd dot
+: 1567555026:0;stow
+: 1567555031:0;pikaur -S stow
+: 1567555059:0;cd daelvn
+: 1567555060:0;cd .config
+: 1567555076:0;rm -r gtk-3.0
+: 1567555080:0;stow gtk
+: 1567560808:0;nvim test/init.moon
+: 1567572505:0;nvim dot/zsh/.zshrc
+: 1567574550:0;cd school
+: 1567574559:0;mkdir 4-eso 
+: 1567574566:0;mv *.md 4-eso
+: 1567574569:0;mv *.pdf 4-eso
+: 1567574580:0;mv *.odt 4-eso
+: 1567574587:0;mv *.*g 4-eso/7
+: 1567574589:0;mv *.*g 4-eso/
+: 1567574602:0;mv *.m4a 4-eso
+: 1567574607:0;mv *.mp4 4-eso
+: 1567574613:0;ls otros
+: 1567574616:0;rm otros
+: 1567574618:0;ls movies
+: 1567574626:0;mv movies 4-eso
+: 1567574627:0;ls libretas
+: 1567574632:0;mv libretas 4-eso
+: 1567574634:0;ls english
+: 1567574645:0;mv english c1-acad
+: 1567574648:0;ls documents
+: 1567574657:0;mv documents tarraga
+: 1567574670:0;mkdir 1-bach
+: 1567574672:0;cd 1-bach/+
+: 1567574674:0;cd 1-bach/
+: 1567574719:0;mkdir ls11
+: 1567574736:0;mkdir md11
+: 1567574755:0;mkdir en11
+: 1567574758:0;mkdir dr11
+: 1567574765:0;mkdir hg12
+: 1567574773:0;mkdir as11
+: 1567574777:0;mkdir pc11
+: 1567574792:0;nvim syllabus.md
+: 1567576340:0;ls vfs/usb
+: 1567576354:0;sudo mount /dev/sdb1 vfs/usb
+: 1567576363:0;cd vfs/usb
+: 1567576386:0;mkdir aam12
+: 1567578464:0;pikaur -Ss lsof
+: 1567578495:0;pikaur -S lsof
+: 1567578513:0;lsof
+: 1567578532:0;lsof | grep sdb
+: 1567578569:0;lsof | grep sdb1
+: 1567646306:0;cd media/pictures
+: 1567646309:0;cd avatar
+: 1567646461:0;ls | wc -l
+: 1567654018:0;pacman -Ss ttf- | egrep "^\w+/" | cut -d '/' -f2 | cut -d ' ' -f1 | xargs sudo pacman -S
+: 1567654077:0;pacman -Ss ttf- | egrep "^\w+/" | cut -d '/' -f2 | cut -d ' ' -f1 | xargs sudo pacman -S --noconfirm
+: 1567659266:0;nvim coll/pagebreak.txt
+: 1567899179:0;pikaur -Ss legit
+: 1567911026:0;pikaur -S legit-git
+: 1567911598:0;cat debugkit
+: 1567911614:0;cat ltypekit/config.ld
+: 1567912021:0;nvim debugkit/init.moon
+: 1567912310:0;nvim debugkit-scm-1.rockspec
+: 1567912508:0;cd arc/autohydraz
+: 1567912571:0;mkdir rockwriter
+: 1567912578:0;cat LICENSE.md
+: 1567913393:0;nvim filekit
+: 1567913463:0;git commit -m "currentDir is now actually a function"
+: 1567913698:0;moon rockwriter.moon
+: 1567913766:0;git commit -m "woops forgot to compile"
+: 1567913850:0;touch any.rockspec
+: 1567913970:0;nvim filekit.moon
+: 1567914423:0;rm any.rockspec
+: 1567917739:0;fg 23784
+: 1567917743:0;fg %nvim
+: 1567918774:0;lua rockwriter.moon
+: 1567918930:0;moonc
+: 1567918936:0;ldoc
+: 1567918942:0;luaver use 5.
+: 1567918984:0;git commit -m "safeOpen has been made public"
+: 1567919010:0;luarocks install --server=https://luarocks.org/dev filekit
+: 1567919023:0;lua rockwriter.lua any.rockspec
+: 1567919091:0;nvim any.rockspec
+: 1567919147:0;cat any.rockspec
+: 1567919241:0;mv any.rockspec any-2.3.5-1.rockspec
+: 1567919570:0;home arc
+: 1567919577:0;cd lbuilder2
+: 1567919674:0;nvim any-2.3.5-1.rockspec
+: 1567919844:0;cat any-2.4-1.rockspec
+: 1567919847:0;nvim any-2.4-1.rockspec
+: 1567919870:0;lua rockwriter.lua -u
+: 1567919877:0;cat any-3.0-1.rockspec
+: 1567920378:0;lua rockwriter.lua new-1.0-1.rockspec
+: 1567920450:0;lua rockwriter.lua new-1.0-1.rockspec --issue-url --maintainer --labels
+: 1567920492:0;cat new-1.0-1.rockspec
+: 1567920506:0;lua new-1.0-1.rockspec
+: 1567920716:0;lua rockwriter.lua -h
+: 1567921842:0;rm *.r*
+: 1567924332:0;lua rockwriter.lua any-1.0-1.rockspec
+: 1567924558:0;nvim rockwriter.lua
+: 1567924605:0;lua rockwriter.lua
+: 1567924780:0;cat any-1.0-1.rockspec
+: 1567925406:0;lua rockwriter.lua autohydraz-dev-3.rockspec
+: 1567925659:0;cat autohydraz-dev-3.rockspec
+: 1567926564:0;home arc/alfons
+: 1567926568:0;cat alfons-2.3.2-2.rockspec
+: 1567926588:0;rm *.rockspec
+: 1567927459:0;mv rockwriter.lua rockwriter
+: 1567927461:0;nvim rockwriter
+: 1567927491:0;chmod +x rockwriter
+: 1567927494:0;./rockwriter
+: 1567927498:0;./rockwriter -h
+: 1567927930:0;git create --help
+: 1567927941:0;pikaur -Ss hub
+: 1567928081:0;pikaur -S hub-git
+: 1567928449:0;home
+: 1567928456:0;nvim dot/zsh/aliases
+: 1567928577:0;git --help create
+: 1567928642:0;git create -p -d "Rockspecs made easy" -h "https://github.com/daelvn/rockwriter" rockwriter
+: 1567928673:0;git commit -m "initial commit"
+: 1567929007:0;nvim README.md 
+: 1567929084:0;git commit -m "trying to fix readme"
+: 1567929773:0;git commit -m "apparently i cannot use images in my readme"
+: 1567929905:0;./rockwriter rockwriter-1.0-1.rockspec
+: 1567930123:0;./rockwriter --help
+: 1567930129:0;./rockwriter rockwriter-1.0-1.rockspec --tag
+: 1567930225:0;cat rockwriter-1.0-1.rockspec
+: 1567930237:0;git commit -m "added rockspec"
+: 1567930243:0;git push origin master
+: 1567930380:0;git tag -a v1.0 -m "Initial release"
+: 1567930396:0;git push origin master --tags
+: 1567930412:0;luarocks upload rockwriter-1.0-1.rockspec
+: 1567930438:0;rm *.src.*
+: 1567969769:0;cd filekit
+: 1567969793:0;legit
+: 1567969799:0;legit -h
+: 1567969823:0;legit branches
+: 1567969866:0;mv filekit-scm-2.rockspec filekit-1.0-1.rockspec
+: 1567969948:0;legit publish --fake
+: 1567970184:0;mkdir kikgit
+: 1567970186:0;cd kikgit
+: 1567970274:0;nvim lrunkit/v3.moon
+: 1567970289:0;bat lrunkit-2.1-2.rockspec
+: 1567970292:0;cat lrunkit-2.1-2.rockspec
+: 1567970317:0;pikaur -S bat
+: 1567970419:0;pikaur -Syu bat
+: 1567970533:0;cat lrunkit/init.moon
+: 1567970546:0;cat lrunkit/v
+: 1567970548:0;cat lrunkit/v3.
+: 1567972096:0;lua kikgit.lua
+: 1567972098:0;lua kikgit.lua -h
+: 1567972104:0;lua kikgit.lua -h p
+: 1567972106:0;lua kikgit.lua -h push
+: 1567972127:0;cd test
+: 1567972134:0;touch ee
+: 1567972146:0;cp kikgit.lua ~/dev/test
+: 1567972157:0;mv kikgit.lua kikgit
+: 1567972187:0;./kikgit -h
+: 1567972277:0;home aur/lr
+: 1567972291:0;cat lrunkit/v3.moon
+: 1567972525:0;./kikgit push
+: 1567972570:0;rm ee
+: 1567973291:0;chmod +x kikgit
+: 1567973570:0;./kikgit push -m "Let\'s see"
+: 1567973667:0;./kikgit push -m "Let's see"
+: 1567973681:0;touch aa
+: 1567973689:0;git commit -m "hee"
+: 1567973692:0;touch b
+: 1567973702:0;git commit -m "hoo"
+: 1567973743:0;./kikgit push -j
+: 1567973813:0;rm a b
+: 1567973817:0;rm aa
+: 1567973829:0;./kikgit release v1.0
+: 1567974241:0;./kikgit --help
+: 1567974245:0;./kikgit --help push
+: 1567974250:0;./kikgit push --help
+: 1567974259:0;07
+: 1567974294:0;./kikgit r --help
+: 1567974411:0;rockwrite
+: 1567974414:0;rockwriter
+: 1567974428:0;rockwriter kikgit-1.0-1.rockspec
+: 1567974469:0;nvim kikgit
+: 1567974612:0;git create -d "It's git, but quicker (not really)"
+: 1567974664:0;lua kikgit.lua r v1.0
+: 1567974775:0;rocksend kikgit-1.0-1.rockspec
+: 1567974894:0;kikgit
+: 1567974919:0;cat filekit-1.0-1.rockspec
+: 1567974923:0;nvim filekit-1.0-1.rockspec
+: 1567975061:0;rocksend filekit
+: 1567975123:0;rm awesome-stars
+: 1567975137:0;cd debugkit
+: 1567975146:0;ls debugkit
+: 1567975165:0;rockwriter debugkit-1.0-1.rockspec
+: 1567975176:0;cat debugkit-scm-1.rockspec
+: 1567975187:0;rockwriter debugkit-1.0-1.rockspec --tag
+: 1567975340:0;rm debugkit-scm-1.rockspec
+: 1567981671:0;pikaur -Ss aseprite
+: 1567981741:0;pikaur -S aseprite-git
+: 1567982748:0;mkdir leo
+: 1567982751:0;mkdir leo/es
+: 1567982755:0;mkdir leo/en
+: 1567982863:0;nvim leo/es/la-mierda-de-leo.html
+: 1567982869:0;see daelvn.github.io
+: 1567983226:0;nvim leo/en/leos-shit.html
+: 1567983534:0;nvim leo/es/el-minino.html
+: 1567983554:0;nvim leo/es/la-rabia.html
+: 1567983584:0;nvim leo/es/el-amor-no-es-para-ti.html
+: 1567983613:0;nvim leo/es/este-demonio-yace-aqui.html
+: 1567983658:0;nvim leo/es/lagrimas-de-color-escarlata.html
+: 1567983704:0;nvim leo/es/soledad.html
+: 1567983727:0;nvim leo/es/el-ser-inutil.html
+: 1567983847:0;for f in leo/es/*; do; ./poetry.sh "$f"; done
+: 1567983856:0;cat leo/es/*
+: 1567984685:0;cat debugkit/init.moon
+: 1567984765:0;git create -d "Print debugging made great again."
+: 1567984776:0;kikgit r v1.0 -m "Initial commit."
+: 1567986477:0;nvim ~/dot/nvim/.config/nvim/init.vim
+: 1567986797:0;nvim dot/nvim/.config/nvim/init.vim
+: 1567986954:0;ee
+: 1567988263:0;nvim debugkit
+: 1567989358:0;cat dot/nvim/.config/nvim/init.vim
+: 1567990096:0;ldoc debugkit
+: 1567990103:0;luaver use 5.1.5
+: 1567990116:0;kikgit r v1.1
+: 1567990715:0;moon libllengua/config.moon
+: 1567990847:0;nvim libllengua
+: 1567991846:0;nvim test
+: 1567992268:0;nvim test/declensions.moon
+: 1568163030:0;git clone leafo/moonscript-vim
+: 1568163095:0;cd moonscript-vim
+: 1568163100:0;cd syntax
+: 1568163103:0;nvim moon.vim
+: 1568167967:0;cat data/namedb.moon
+: 1568168097:0;nvim names.txt
+: 1568168140:0;nvim last-names.txt
+: 1568172990:0;luaver set-default 5.3.5
+: 1568173040:0;luaver
+: 1568173043:0;luaver current
+: 1568173652:0;luarocks install kikgit
+: 1568173737:0;kikgit r v1.2
+: 1568173922:0;moonc kikgit.moon
+: 1568173927:0;cat kikgit-1.0-1.rockspec
+: 1568173943:0;nvim kikgit-1.0-1.rockspec
+: 1568174065:0;rocksend kikgit
+: 1568174183:0;git reflog
+: 1568174191:0;git reset HEAD
+: 1568174207:0;git reset HEAD --soft
+: 1568174209:0;git reset HEAD --hard
+: 1568174264:0;git checkout 63b4fa2 -- rockwriter
+: 1568174268:0;git checkout 63b4fa2 -- rockwriter.moon
+: 1568174284:0;rm -r rockwriter
+: 1568174301:0;git clone rockwriter
+: 1568174307:0;cd rockwriter
+: 1568174358:0;nvim rockwriter-1.0-1.rockspec
+: 1568174394:0;kikgit r v1.0.1
+: 1568174474:0;rocksend rockwriter
+: 1568174599:0;kikgit p -m "fixed small error in rockspec"
+: 1568174655:0;moon test/name.moon
+: 1568174659:0;moon test/name.moon 10
+: 1568174698:0;ls data
+: 1568174707:0;see rpkit
+: 1568174711:0;cat placedb.moon
+: 1568174746:0;cat Makefile
+: 1568174761:0;luarocks install randbytes
+: 1568174774:0;makeplace
+: 1568174778:0;make place
+: 1568174788:0;make place 10
+: 1568174800:0;moon place.moon placedb.lua 10
+: 1568174805:0;moon place.moon placedb.lua 30
+: 1568175029:0;nvim libllengua/llre/v2.moon
+: 1568335009:0;pikaur -Ss fparted
+: 1568335082:0;sudo gparted /dev/sdb
+: 1568335097:0;ls dev
+: 1568335101:0;ls /dev
+: 1568335172:0;mount
+: 1568335190:0;lsblk -a
+: 1568335205:0;fdisk -l
+: 1568335548:0;cat /sys/block/sdb
+: 1568335552:0;cat /sys/block/sdb/size
+: 1568335630:0;cat /sys/block/sdb/alignment_offset
+: 1568335684:0;dd if=/dev/zero > /dev/sdb
+: 1568335695:0;sudo dd if=/dev/zero > /dev/sdb
+: 1568335932:0;reboot
+: 1568336684:0;sudo dd if=/dev/zero of=/dev/sdb bs=4k && sync
+: 1568336749:0;sudo fdisk -l
+: 1568336755:0;lsblk+
+: 1568337022:0;sudo gparted
+: 1568337190:0;sudo fdisk /dev/sdb
+: 1568337619:0;lsblk
+: 1568337627:0;dmesg
+: 1568337638:0;dmesg | tail --color
+: 1568337642:0;dmesg | tail
+: 1568338810:0;cd media/docs/school/1-bach
+: 1568338812:0;cd ls11
+: 1568338827:0;nvim e1.md
+: 1568354050:0;home aur
+: 1568354109:0;git clone MCJack123/craftos2
+: 1568430716:0;nivm debugkit-1.2-1.rockspec
+: 1568430760:0;rockwriter debugkit-1.2-1.rockspec
+: 1568430868:0;cat debugkit-1.2-1.rockspec
+: 1568430878:0;nvim debugkit-1.2-1.rockspec
+: 1568430927:0;kikgit r v1.2.1
+: 1568431483:0;cat kikgit
+: 1568431502:0;cat rockwriter.moon
+: 1568432112:0;home arc/lrunkit
+: 1568432231:0;mkdir runkit
+: 1568432234:0;cd runkit
+: 1568434120:0;cp ~/dev/filekit/config.ld .
+: 1568435077:0;echo -
+: 1568435084:0;cat -
+: 1568435220:0;nvim test.txt
+: 1568435275:0;nvim test.
+: 1568435302:0;cat test.moon
+: 1568436673:0;ls /tmp
+: 1568436679:0;cat /tmp/lua*
+: 1568436687:0;rm /tmp/lua*
+: 1568436707:0;cd tmp
+: 1568436709:0;cd /tmp
+: 1568436732:0;cat lua_fzI9cL
+: 1568436736:0;cat lua_mKbqpp
+: 1568436814:0;cat lua_tU2vAA
+: 1568436830:0;rm lua_tU2vAA
+: 1568436840:0;cat lua_n0GOTT
+: 1568437097:0;cat lua_READ
+: 1568437120:0;rm lua*
+: 1568437336:0;luarocks install ldoc
+: 1568437650:0;ñs
+: 1568437661:0;rockwriter runkit-1.0-1.rockspec
+: 1568437692:0;rockwriter runkit-1.0-1.rockspec --tag
+: 1568437867:0;git help create
+: 1568437915:0;git create -d "A better version of the old lrunkit. Run commands in Lua easily -h "https://git.daelvn.ga/runkit/"\
 "
-: 1546666226:0;git commit -m "Name change for rockspec"
-: 1546666288:0;rocksend msmx
-: 1546666530:0;git branch table-operations
-: 1546666540:0;nvim tests/test.msmx
-: 1546667812:0;nvim lbuilder/parsec/Char.moon
-: 1546667856:0;mv lbuilder/parsec/Char.moon lbuilder/parsec/Char.msmx
-: 1546668107:0;howl .
-: 1546668118:0;howl lbuilder/parsec/Char.msmx
-: 1546668443:0;nvim msmx/import-simple.moon
-: 1546669059:0;git commit -m "Trying to fix import-simple"
-: 1546689432:0;nvim msmx/import-simple.
-: 1546729100:0;bat bin/pacsign
-: 1546732319:0;cp msmx/import-all.moon msmx/import-simple-all.moon
-: 1546732327:0;nvim msmx/import-simple-all.moon
-: 1546732757:0;moon bin/msmx.moon -h
-: 1546733090:0;lsblk
-: 1546733706:0;nvim msmx/pragmas.moon
-: 1546733745:0;mv msmx/pragmas.moon msmx/pragma.moon
-: 1546733972:0;ghc --supported-extensions
-: 1546733999:0;mount
-: 1546735837:0;nvim syntax
-: 1546736125:0;git commit -m "Added pragmas"
-: 1546736482:0;mkdir msmx/std
-: 1546736493:0;nvim msmx/std/no-namespaces.moon
-: 1546737491:0;rm msmx/std
-: 1546737548:0;nvim msmx/import-std.moon
-: 1546737554:0;nvim msmx/import-all.moon
-: 1546737896:0;pacaur -Ss devdocs
-: 1546737938:0;pacaur -S devdocs-desktop
-: 1546740117:0;moon bin/msmx.moon -p tests/test.msmx
-: 1546740294:0;git commit -m "Added pragmas and namespace removal"
-: 1546740663:0;:luarocks make
-: 1546740890:0;nvim tests/infix.msmx
-: 1546746153:0;home media/pictures/nsfw/e
-: 1546746168:0;cd fav:daelvn
-: 1546746175:0;get621 -s -v -l 500 fav:daelvn
-: 1546785733:0;xrandr | grep ' connected'
-: 1546870639:0;bat tests/infix.msmx
-: 1546872897:0;zstyle -e ':completion:*:(|all-|globbed-)files' ignored-patterns '[[ $PWD/ == $HOME/dev/* ]] && reply=( "*.lua" )'
-: 1546872974:0;ls --ignore=**/*.lua
-: 1546872978:0;ls --ignore=**/*.lua msmx
-: 1546872983:0;ls --ignore=*.lua msmx
-: 1546872991:0;ls --ignore *.lua msmx
-: 1546873024:0;ls -I *.lua msmx
-: 1546873032:0;ls -I "*.lua" msmx
-: 1546873055:0;ls -I "~/dev/*/**/*.lua" msmx
-: 1546873078:0;ls -I "~/dev/**.lua" msmx
-: 1546873081:0;ls -I "~/dev/*/*.lua" msmx
-: 1546873086:0;ls -I "~/dev/**/*.lua" msmx
-: 1546874812:0;man ls
-: 1546874847:0;ls --hide=~/dev/**/*.lua msmx
-: 1546874852:0;ls --hide "~/dev/**/*.lua" msmx
-: 1546875076:0;ls --hide "/home/daelvn/dev/**/*.lua" msmx
-: 1546875082:0;ls --hide "/home/daelvn/dev/msmx/msmx/*.lua" msmx
-: 1546875115:0;( find ./ -name '*.moon' -print0 | xargs -0 cat ) | wc -l
-: 1546875129:0;nvim ~/dot/zsh/.zshrc
-: 1546875341:0;( find ./ -name '*.php' -print0 | xargs -0 cat ) | wc -l
-: 1546875346:0;wl
-: 1546875355:0;ls --hide "*.lua" msmx
-: 1546875453:0;cd msmx
-: 1546875454:0;ls -LR --hide "*.lua" msmx
-: 1546875703:0;echo $PWD
-: 1546875725:0;nvim ~/dot/zsh/aliases
-: 1546876772:0;pacaur -Ss funky
-: 1546876783:0;pip
-: 1546876791:0;sudo pip install pyfunky
-: 1546876818:0;funky -h
-: 1546876898:0;gfunk -a fu
-: 1546876902:0;gfunky -a fu
-: 1546876911:0;gfg
-: 1546876991:0;alias gfunky='funky'
-: 1546876993:0;gfunky
-: 1546876996:0;funky
-: 1546877560:0;alias
-: 1546877594:0;whence l
-: 1546877611:0;whence lsx
-: 1546878068:0;lsx
-: 1546878072:0;lsx msmx
-: 1546878236:0;builtin
-: 1546878341:0;lss
-: 1546878344:0;lss msmx
-: 1546878370:0;ls bin
-: 1546878373:0;la bin
-: 1546878391:0;. ~/dot/zsh/aliases
-: 1546878394:0;ls msmx
-: 1546879192:0;nvim +PlugInstall
-: 1546879331:0;nvim msmx/infix.moon
-: 1546879390:0;moon bin/msmx.moon -p tests/infix.msmx
-: 1546879616:0;see lbuilder3
-: 1546879633:0;msmx -p lbuilder/parsec/Char.msmx
-: 1546879667:0;bat test/test-parsec.moon
-: 1546879715:0;msmx lbuilder/parsec/Char.msmx
-: 1546879786:0;moon test/test-parsec.moon
-: 1546880414:0;pacair -Ss airdroid
-: 1546880417:0;pacaur -Ss airdroid
-: 1546881925:0;git branch develop
-: 1546881952:0;mkdir ROADMAP.md
-: 1546881957:0;rmdir ROADMAP.md
-: 1546889326:0;pacaur -Syu
-: 1546967147:0;bat ltypekit/signature7.moon
-: 1546970465:0;nvim ./tree.moon
-: 1546976333:0;l
-: 1546986615:0;nvim ltypekit/signature7.moon
-: 1547073501:0;nvim ROADMAP.md
-: 1547073697:0;mkdir plan
-: 1547074395:0;moon ltypekit/signature7.moon
-: 1547074706:0;bat ltypekit/signature.moon
-: 1547132679:0;pacaur -R snapd github-desktop osu-lazer
-: 1547132742:0;pacaur -Rsn snapd github-desktop osu-lazer
-: 1547134440:0;pacsign A2C794A986419D8A
-: 1547134457:0;pacaur -Syu --aur
-: 1547136063:0;nvim test
-: 1547136084:0;nvim test/crosstypes.moon
-: 1547136282:0;nvim ltypekit/type7.moon
-: 1547136343:0;msmx -h
-: 1547136372:0;moonc
-: 1547136429:0;mv ltypekit/type7.moon ltypekit/type7.msmx
-: 1547137982:0;nvim dot/zsh/.zshrc
-: 1547137997:0;zsh
-: 1547138010:0;htop
-: 1547138061:0;mv ltypekit/types/Char.moon ltypekit/types/Char.msmx
-: 1547138076:0;sudo ranger
-: 1547138338:0;sudo nvim /usr/share/highlight/langDefs/msmx.lang
-: 1547138367:0;sudo nvim /usr/share/highlight/langDefs/lua.lang
-: 1547138772:0;cp ltypekit ltypekit_test
-: 1547138776:0;cd ltypekit_test
-: 1547138943:0;nvim plan/classes.moon
-: 1547139303:0;cp Alfons ../ltypekit/Alfons
-: 1547139367:0;msmx ltypekit/init.msmx
-: 1547139374:0;nvim ltypekit/init.moon
-: 1547139398:0;rm plan/classes.moon
-: 1547139680:0;see ltype
-: 1547143586:0;cp msmx/ask.moon msmx/where.moon
-: 1547143592:0;nvim msmx/where.moon
-: 1547143777:0;nvim ltypekit/type7.m
-: 1547143923:0;cp msmx/sign.moon msmx/oversign.moon
-: 1547143925:0;nvim msmx
-: 1547143986:0;nvim bin/msmx.moon
-: 1547144025:0;moonc bin
-: 1547144028:0;moonc msmx
-: 1547144050:0;see msmx-vim
-: 1547144060:0;nvim syntax/msmx.vim
-: 1547144147:0;git commit -m "Added 'where' keyword"
-: 1547144176:0;nvim +PlugInstall ltypekit/type7.msmx
-: 1547144558:0;nvim msmx-dev-1.rockspec
-: 1547144798:0;nvim ltypekit/type7.msmx
-: 1547144829:0;msmx -p ltypekit/type7.msmx
-: 1547148087:0;msmx ltypekit/type7.msmx
-: 1547150069:0;:w
-: 1547150105:0;moon ltypekit/type7.moon
-: 1547220117:0;pacaur -S alsa-lib gnutls lcms2 lib32-alsa-lib lib32-gnutls lib32-lcms2 lib32-libldap lib32-mpg123 gendesk icoutils imagemagick alsa-plugins lib32-alsa-plugins lib32-libpulse libpulse openal lib32-openal winetricks wine-staging wine wine-mono wine_gecko
-: 1547220426:0;pacaur -S lib32-v4l-utiks opencl-icd-loader lib32-opencl-icd-loader lib32-libxslt lib32-libva lib32-gtk3 lib32-gst-plugins-base-libs lib32-vulkan-icd-loader lib32-sdl2
-: 1547220504:0;pacaur -S lib32-v4l-utils
-: 1547220510:0;leagueoflegends
-: 1547220524:0;leagueoflegends uninstall
-: 1547220534:0;leagueoflegends make_wineprefix
-: 1547220687:0;leagueoflegends install
-: 1547220724:0;leagueoflegends launch
-: 1547221426:0;pacaur -Ss lutris
-: 1547221430:0;pacaur -S lutris
-: 1547239677:0;git commit -m "Too many changes to be listed right now, check the subsequent release, if there ever is"
-: 1547239693:0;git push origin develop
-: 1547239713:0;git checkout master
-: 1547239904:0;rm ltypekit_test
-: 1547239936:0;rm -f ltypekit_test
-: 1547239942:0;rm lerrorkit
-: 1547240170:0;pacaur -Ss riko
-: 1547240188:0;git clone incinirate/Riko4
-: 1547240217:0;pacaur -Ss sdl-gpu
-: 1547240369:0;git clone https://github.com/grimfang4/sdl-gpu.git sdl-gpu
-: 1547240382:0;cd sdl-gpu
-: 1547240385:0;cmake -G "Unix Makefiles"
-: 1547240531:0;sudo make install
-: 1547240541:0;cd Riko4
-: 1547240552:0;mkdir build
-: 1547240557:0;cp -r scripts build
-: 1547240563:0;cp -r data build
-: 1547240565:0;cd build
-: 1547240594:0;pacaur -Ss curlpp
-: 1547240599:0;pacaur -S libcurlpp
-: 1547240652:0;cmake ..
-: 1547247751:0;./riko4
-: 1547247917:0;ls .local/share/riko4/app/
-: 1547247934:0;cp riko4 ~/bin/riko4
-: 1547247956:0;riko4
-: 1547250859:0;cd .steam/steam/steamapps/common/Heartbound/
-: 1547250865:0;./run.sh
-: 1547250873:0;./runner
-: 1547251063:0;.steam/steam/steamapps/common/Heartbound/run.sh
-: 1547251069:0;.steam/steam/steamapps/common/Heartbound/runner
-: 1547251113:0;itch-setup
-: 1547313020:0;pacaur -Ss mcreator
-: 1547313235:0;rm mcreator
-: 1547313274:0;cd aur/mcreator
-: 1547313287:0;rm *
-: 1547313324:0;cd mcreator
-: 1547313332:0;java -jar mcreator.jar
-: 1547316236:0;pacaur -Ss ocemu
-: 1547316476:0;pacaur -S ocemu
-: 1547316583:0;luarocks use 5.2
-: 1547316587:0;luaver
-: 1547316591:0;luaver list
-: 1547316597:0;luaver install 5.2.0
-: 1547316638:0;ocemu
-: 1547316689:0;luarocks install luaffi luautf8
-: 1547316720:0;luarocks install luaffi
-: 1547316791:0;luarocks install luafilesystem
-: 1547316799:0;luarocks install luautf8
-: 1547316805:0;luarocks install luasocket
-: 1547316810:0;luarocks install luasec
-: 1547316856:0;git clone --recursive https://github.com/gamax92/OCEmu.git ocemu
-: 1547316861:0;cd ocemu
-: 1547316865:0;cd luaffifb
-: 1547316910:0;make build
-: 1547316922:0;make
-: 1547316938:0;bat Makefile
-: 1547316955:0;cd src
-: 1547316959:0;lua boot.lua
-: 1547317033:0;loce
-: 1547317034:0;love
-: 1547317038:0;love --version
-: 1547317082:0;ls Game
-: 1547317083:0;ls Games
-: 1547317087:0;rm Games
-: 1547317094:0;cd dev
-: 1547317118:0;nvim main.moon
-: 1547317174:0;mv main.moon main.msmx
-: 1547317178:0;nvim main.msmx
-: 1547317226:0;nvim README.md
-: 1547318314:0;bat msmx/infix.moon
-: 1547318449:0;bat msmx/negate.moon
-: 1547318490:0;bat msmx/nil-update.moon
-: 1547318511:0;bat msmx/oversign.moon
-: 1547318570:0;tree msmx
-: 1547318607:0;bat msmx/pragma.moon
-: 1547318877:0;git commit -m "Finished README"
-: 1547319046:0;mkdir euc
-: 1547319051:0;mv main.msmx euc/main.msmx
-: 1547319163:0;luarocks install moonscript
-: 1547319175:0;luarocks use 5.1.5
-: 1547319179:0;luaver use 5.1.5
-: 1547319219:0;luaver use 5.3.5
-: 1547319238:0;see msmx
-: 1547319247:0;msmx
-: 1547319280:0;love main.lua
-: 1547319560:0;ls euc
-: 1547320847:0;see alfons
-: 1547320852:0;nvim alfons.moon
-: 1547321203:0;nvim euc.config
-: 1547322102:0;mkdir euc/assets
-: 1547322113:0;curl -o euc/assets/scientifica.bdf https://raw.githubusercontent.com/NerdyPepper/scientifica/master/regular/scientifica-11.bdf
-: 1547322262:0;pacaur -Ss bdf2ttf
-: 1547322470:0;pacaur -Ss fontforge
-: 1547322477:0;pacaur -Ss potrace
-: 1547322484:0;pacaur -S fontforge
-: 1547322507:0;pacaur -Ss mkitalic
-: 1547322514:0;pacaur -S mkbold-mkitalic
-: 1547322541:0;pacaur -Ss mkttf
-: 1547322545:0;pacaur -Ss bdf
-: 1547322638:0;home aur
-: 1547322642:0;git clone Tblue/mkttf
-: 1547322647:0;cd mkttf
-: 1547322655:0;./mkttf.py -h
-: 1547322692:0;bat dist.sh
-: 1547322710:0;bat mkttf.
-: 1547322713:0;bat mkttf.sh
-: 1547322756:0;cp mkttf.py ~/bin/mkttf
-: 1547322763:0;see euc/euc
-: 1547322774:0;mkttf assets/scientifica.bdf
-: 1547322814:0;mv scientifica* assets
-: 1547322817:0;cd assets
-: 1547322825:0;mv scientifica-001.000.sfd scientifica.sfd
-: 1547322830:0;mv scientifica-001.000.ttf scientifica.ttf
-: 1547331209:0;nvim ~/.config/nvim/init.vim
-: 1547331336:0;nvim +PlugUpdate euc
-: 1547332831:0;mkdir lib
-: 1547332834:0;cd lib
-: 1547332846:0;nvim euc/lib/libev.msmx
-: 1547333447:0;luarocks show ltypekit
-: 1547335331:0;nvim euc/main.msmx
-: 1547335457:0;mkdir coll
-: 1547335474:0;nvim coll/nord.lua
-: 1547336879:0;msmx lib/libev.msmx
-: 1547336882:0;moonc lib
-: 1547339258:0;cd media/pictures/nsfw/e
-: 1547339268:0;mkdir 'Last Resort'
-: 1547339270:0;cd Last\ Resort
-: 1547339277:0;get621 -s -P 9539
-: 1547341255:0;occlude euc.config
-: 1547341294:0;nvim euc
-: 1547341327:0;alfons clear
-: 1547342315:0;see euc
-: 1547342395:0;love euc
-: 1547343048:0;love euc x
-: 1547343150:0;love euc 0
-: 1547343157:0;love euc 2
-: 1547343298:0;mkdir euc/inst/0
-: 1547343306:0;alfons clean
-: 1547344179:0;nvim lib/libfs.msmx
-: 1547345627:0;cd euc
-: 1547345630:0;cd inst/0
-: 1547345635:0;nvim vmeuc.msmx
-: 1547346517:0;git branch complex-types
-: 1547346523:0;git checkout complex-types
-: 1547346532:0;nvim ltypekit/signature.moon
-: 1547346668:0;nvim ltypekit/type.moon
-: 1547396764:0;see ltypekit
-: 1547396930:0;ls7
-: 1547396939:0;nimv ltypekit/type61.moon
-: 1547396943:0;nvim ltypekit/type61.moon
-: 1547397048:0;cd ltypekit
-: 1547397056:0;mv type61.moon type.moon
-: 1547397067:0;cd types
-: 1547397070:0;nvim Char.moon
-: 1547397524:0;git commit -m "Adding typekit7-like type.moon, but fully compatible"
-: 1547397533:0;git push origin complex-types
-: 1547397542:0;git checkout develop
-: 1547397630:0;git branch -m ltypekit7
-: 1547397649:0;git branch
-: 1547397666:0;git push origin :develop ltypekit7
-: 1547397682:0;git push origin -u ltypekit7
-: 1547397766:0;nvim ltypekit/signature7.msmx
-: 1547401030:0;nvim kristal-api
-: 1547401042:0;mkdir kristal-api
-: 1547401065:0;cd diversity
-: 1547401081:0;grab docker-compose.yml
-: 1547401085:0;put docker-compose.yml
-: 1547401092:0;mv docker-compose.yml kristal-api
-: 1547401094:0;cd kristal-api
-: 1547401129:0;cp data ~/dev/cc/kristal-api
-: 1547401140:0;bat docker-compose.yml
-: 1547401159:0;cp postgres ~/dev/cc/kristal-api
-: 1547401165:0;mkdir site
-: 1547401212:0;bat postgres/Dockerfile
-: 1547401221:0;nvim postgres/1-init.sql
-: 1547401260:0;bat postgres/pg_hba.conf
-: 1547401283:0;cd site
-: 1547401288:0;lapis
-: 1547401292:0;lapis new
-: 1547401323:0;cp site/config.moon ~/dev/cc/kristal-api/site
-: 1547401328:0;nvim config.moon
-: 1547401361:0;nvim app.moon
-: 1547401368:0;docker-compose
-: 1547401377:0;cd diversity4
-: 1547401383:0;bat Alfons
-: 1547401414:0;nvim Alfons
-: 1547401822:0;cp site/Dockerfile ~/dev/cc/site
-: 1547401831:0;ls cc
-: 1547401834:0;ls ..
-: 1547401843:0;cp ../site site/Dockerfile
-: 1547401854:0;nvim site/Dockerfile
-: 1547401875:0;ls site
-: 1547401878:0;ls site/static/
-: 1547401889:0;cp site/docker-entrypoint.sh
-: 1547401896:0;cp site/docker-entrypoint.sh ~/dev/cc/kristal-api/site
-: 1547401927:0;cp site/OpenResty.repo ~/dev/cc/kristal-api/site
-: 1547402070:0;nvim site/Docker
-: 1547402189:0;docker-compose build --no-cache
-: 1547402472:0;docker-compose up
-: 1547402494:0;bat site/config.moon
-: 1547402527:0;nvim site/config.moon
-: 1547402606:0;nvim site/nginx.conf
-: 1547402808:0;alfons compile
-: 1547402819:0;alfons .all compile
-: 1547402825:0;alfons compose
-: 1547403826:0;heroku plugins:install heroku-container-registry
-: 1547403857:0;heroku
-: 1547403862:0;heroku container
-: 1547403867:0;heroku container:login
-: 1547404029:0;heroku apps:create kristal-api
-: 1547404037:0;git remote -v
-: 1547404112:0;git remote add origin git@github.com:daelvn/kristal-api.git
-: 1547404127:0;git add -A "Initial commit"
-: 1547404138:0;alfons .all clean
-: 1547404160:0;git push origin master --force
-: 1547404228:0;heroku container:push web
-: 1547404387:0;mv site/Dockerfile site/Dockerfile.site
-: 1547404393:0;nvim site
-: 1547404405:0;mv postgres/Dockerfile postgres/Dockerfile.postgres
-: 1547404451:0;heroku container:push --recursive
-: 1547406731:0;0x0 u ~/dot/nvim/.config/nvim/init.vim
-: 1547408047:0;ls .local/share/nvim
-: 1547408068:0;ls .config/nvim
-: 1547408078:0;la .config/nvim
-: 1547409229:0;mv site web
-: 1547409231:0;nvim docker-compose.yml
-: 1547409250:0;nvim web/Dockerfile.site
-: 1547409265:0;mv web/Dockerfile.site web/Dockerfile.web
-: 1547409494:0;git commit -m "Trying to get heroku to work"
-: 1547410715:0;rm site
-: 1547410935:0;mkdir ncp
-: 1547410940:0;nvim PROTOCOL.md
-: 1547418192:0;mkdir libncp
-: 1547418519:0;nvim libskynet.lua
-: 1547418538:0;nvim libncp.moon
-: 1547419110:0;mv libncp.moon libncp.msmx
-: 1547419463:0;nvim nilnil.lua
-: 1547419543:0;rm *.moon
-: 1547419546:0;rm *.lua
-: 1547422852:0;mkdir ncpd
-: 1547422858:0;see cc/ncp
-: 1547422864:0;cd libncp
-: 1547505714:0;vlc v4l:// :v4l-vdev="/dev/video0" :v4l-adev="/dev/audio2"
-: 1547507143:0;cd ncp
-: 1547507145:0;cd ncpd
-: 1547507151:0;nvim ncpd.msmx
-: 1547507369:0;see cc/ncp/libncp
-: 1547507372:0;nvim libncp.msmx
-: 1547562465:0;0x0 u dot/nvim/.config/nvim/init.vim
-: 1547565862:0;see
-: 1547566952:0;ls vcolor
-: 1547566987:0;rm orig/rom/help
-: 1547566998:0;rm vbios/lib/ltype
-: 1547567037:0;rm v*
-: 1547567041:0;rm -f v*
-: 1547567045:0;rm -f p*
-: 1547567460:0;ccrunx
-: 1547567668:0;see cc/pantheon/paboot
-: 1547567740:0;nvim init.moon
-: 1547569223:0;mv init.moon startup.moon
-: 1547569436:0;ccrunx run paboot
-: 1547569466:0;rm -f .ccrunx
-: 1547569680:0;bat paboot/startup.lua
-: 1547570079:0;mkdir emergency
-: 1547570081:0;cd emergency
-: 1547570084:0;nvim shell.moon
-: 1547570444:0;moonc ccrunx.moon
-: 1547570454:0;mv ccrunx.lua ccrunx
-: 1547570461:0;mkdir rockspecs
-: 1547570465:0;mv ccrunx-1.0-1.rockspec
-: 1547570468:0;mv ccrunx-1.0-1.rockspec rockspecs
-: 1547570473:0;luarocks new_version ccrunx
-: 1547570492:0;rm ccrunx-1.0-2.rockspec
-: 1547570500:0;luarocks help new_version
-: 1547570517:0;luarocks new_version ccrunx 1.0.1
-: 1547570529:0;mv *.rockspec rockspecs
-: 1547570542:0;git commit -m "Added recursivity"
-: 1547570546:0;git tag v1.0.1
-: 1547570580:0;cd rockspecs
-: 1547570589:0;luarocks upload ccrunx-1.0.1-1.rockspec
-: 1547570604:0;rm *.src.*
-: 1547570789:0;nvim startup.moon º
-: 1547571155:0;mv emergency/shell.moon .
-: 1547571157:0;rm emergency
-: 1547572226:0;mv shell.moon emerg.moon
-: 1547572238:0;nvim loader.moon
-: 1547572258:0;mkdir paboot-entries
-: 1547572264:0;mkdir devx
-: 1547572266:0;cd devx
-: 1547572276:0;nvim paboot-entry.emerg
-: 1547572352:0;ccrunx a paboot-entries
-: 1547575258:0;rm paboot
-: 1547576808:0;lls
-: 1547576829:0;cp require.moon ../../
-: 1547576892:0;mkdir ccrequire
-: 1547576899:0;mv require.moon ccrequire
-: 1547576902:0;cd ccrequire
-: 1547576997:0;mv ccrequire cos-require
-: 1547576998:0;cd cos
-: 1547577000:0;cd cos-require
-: 1547577002:0;nvim require.moon
-: 1547578772:0;moonc cos-require
-: 1547578779:0;ccrunx c cos-require
-: 1547578791:0;ccrunx r cos-require
-: 1547579115:0;pacaur -Ss discord
-: 1547579129:0;pacaur -S discord
-: 1547579364:0;bdctl help
-: 1547579383:0;bdctl -h
-: 1547579675:0;see aur
-: 1547579685:0;git clone https://aur.archlinux.org/discord.git discord
-: 1547579729:0;nvim Discord.
-: 1547579734:0;nvim Discord.install
-: 1547579745:0;bat *.sh
-: 1547580117:0;pacaur -U discord-0.0.7-1-x86_64.pkg.tar.xz
-: 1547580330:0;archive cos-require
-: 1547580334:0;cd pantheon/
-: 1547580334:0;s
-: 1547580342:0;rm require.moon
-: 1547583895:0;mkdir paboot
-: 1547583901:0;nvim paboot/ltext.moon
-: 1547584079:0;moonc paboot
-: 1547584245:0;rm devx
-: 1547584296:0;moonc startup.moon
-: 1547584843:0;see cc/pantheon/
-: 1547585002:0;cd paboot-entries
-: 1547585004:0;nvim paboot.craftos
-: 1547585118:0;cd ../paboot
-: 1547585139:0;cd ../paboot-entries
-: 1547585148:0;nvim paboot.pantheon
-: 1547585168:0;ccrunx a paboot paboot-entries
-: 1547585311:0;ccrunx r paboot
-: 1547590567:0;mkdir ccrunx-image
-: 1547590894:0;mkdir lualzw
-: 1547590922:0;curl -o lualzw/lualzw.lua https://raw.githubusercontent.com/Rochet2/lualzw/master/lualzw.lua
-: 1547591010:0;mv lualzw/lualzw.lua .
-: 1547591015:0;rm lualzw
-: 1547593129:0;find . -name require
-: 1547593132:0;find . -name require.moon
-: 1547593151:0;cd .ccrunx
-: 1547593153:0;find .
-: 1547593173:0;find cos-require
-: 1547593176:0;find cos-require/
-: 1547593178:0;find cos-require/*
-: 1547594094:0;luarocks install lua-zip
-: 1547594148:0;luarocks install --server=http://luarocks.org/dev lua-zip
-: 1547648244:0;cd aur
-: 1547648246:0;cd discord
-: 1547648252:0;mv PKGBUILD
-: 1547648255:0;nvim PKGBUILD
-: 1547648268:0;makepkg -Acs
-: 1547648465:0;cd aur/discord
-: 1547648474:0;pacaur -U discord-0.0.8-1-x86_64.pkg.tar.xz
-: 1547648493:0;cd ~
-: 1547648739:0;cd ccrunx-image
-: 1547648760:0;ccrunx c test
-: 1547648780:0;nvim test/test.lua
-: 1547648790:0;ccrunx r test
-: 1547648804:0;moon ccrunx-image.moon
-: 1547648979:0;zip .ccrunx/test
-: 1547648989:0;zip ccrunx-image_test.zip .ccrunx/test
-: 1547648996:0;ranger ccrunx-image_test.zip
-: 1547649070:0;zip ccrunx-image_test.zip -r .ccrunx/test
-: 1547649119:0;rm *.zip
-: 1547649258:0;zip ccrunx-image_test.ccrunx -r test .ccrunx/test
-: 1547649375:0;home aur/discord
-: 1547649477:0;bdctl install
-: 1547649691:0;zip -h
-: 1547649725:0;unzip
-: 1547649747:0;unzip ccrunx-image_test.ccrunx
-: 1547649919:0;rm test .ccrunx
-: 1547649931:0;moon ccrunx-image.moon -h
-: 1547650063:0;moon ccrunx-image.moon d ccrunx-image_test.ccrunx
-: 1547650076:0;rm ccrunx-image_test.ccrunx
-: 1547650083:0;moon ccrunx-image.moon c test
-: 1547650124:0;rm test .ccrunx ccrunx-image_test.ccrunx
-: 1547650124:0;ñs
-: 1547650135:0;moonc ccrunx-image.moon -o ccrunx-image
-: 1547650141:0;xdocco ccrunx-image.moon
-: 1547650242:0;rm README.md
-: 1547650285:0;git create -d "Package CCRunX environments into archives"
-: 1547650302:0;git commit -m "Intitial commit"
-: 1547650315:0;rm lualzw.lua
-: 1547650335:0;git commit -m "Removed lualzw since we're using zip/unzip"
-: 1547650353:0;mkdir ccrunx-compose
-: 1547650753:0;luarocks install lyaml
-: 1547651289:0;grab ccrunx-image.moon
-: 1547651296:0;put ccrunx-image.moon
-: 1547651309:0;mv ccrunx-image.moon ccrunx-compose.moon
-: 1547653445:0;moonc ccrunx-image.moon
-: 1547653453:0;mv ccrunx-image.lua ccrunx-image
-: 1547653457:0;nvim ccrunx-image
-: 1547653473:0;chmod +x ccrunx-image
-: 1547653490:0;./ccrunx-image -h > README.txt
-: 1547654134:0;termite -h
-: 1547654776:0;ccrunx -h
-: 1547654789:0;ccrunx -h new
-: 1547654796:0;ccrunx n
-: 1547657935:0;cd ccrunx
-: 1547658065:0;ccemux -h
-: 1547658217:0;moon ccrunx-compose.moon -h
-: 1547658307:0;occlude ccrunx-compose.yml
-: 1547658352:0;deocclude ccrunx-compose.moon
-: 1547658356:0;deocclude ccrunx-compose.yml
-: 1547658361:0;moon ccrunx-compose.moon b
-: 1547658530:0;moon ccrunx-compose.moon b pa-all
-: 1547658590:0;mv ccrunx-compose.yml example.yml
-: 1547658607:0;moon ccrunx-compose.moon -h > README.txt
-: 1547658624:0;rm *ME.md
-: 1547658692:0;cp ccrunx-compose ../
-: 1547658704:0;cp ./ccrunx-compose ../
-: 1547658734:0;mkdir test
-: 1547658745:0;mkdir paunify
-: 1547658751:0;mkdir pakernel
-: 1547658758:0;mkdir pastandard
-: 1547658771:0;touch */ex.lua
-: 1547658779:0;touch pakernel/init.lua
-: 1547658783:0;touch pastandard/main.lua
-: 1547658791:0;touch paunify/startup.lua
-: 1547658796:0;ccrunx c pakernel
-: 1547658812:0;ccrunx c pastandard && ccrunx c paunify
-: 1547658862:0;ccrunx a pakernel pastandard/main.lua
-: 1547658866:0;ccrunx a pakernel pastandard/
-: 1547659168:0;../ccrunx-compose -h
-: 1547659280:0;../ccrunx-compose b
-: 1547659285:0;tree -a
-: 1547659368:0;ls .ccrunx
-: 1547659370:0;ls .ccrunx/compose
-: 1547659421:0;ranger
-: 1547659505:0;moon ../ccrunx-compose.moon b
-: 1547663380:0;tree .ccrunx
-: 1547663471:0;cp ccrunx-compose.moon ccrunx-compose2.moon
-: 1547663578:0;cd
-: 1547663583:0;cd dev/cc
-: 1547666713:0;moon ../ccrunx-compose2.moon -x
-: 1547666795:0;moon ../ccrunx-compose2.moon -h
-: 1547666800:0;moon ../ccrunx-compose2.moon n
-: 1547666802:0;moon ../ccrunx-compose2.moon nyan
-: 1547666804:0;moon ../ccrunx-compose2.moon nyan -x
-: 1547666828:0;moon ../ccrunx-compose2.moon none -x
-: 1547666964:0;nvim ccrunx.moon
-: 1547667019:0;see lrunkit
-: 1547667028:0;nvim lrunkit.lua
-: 1547667970:0;nvim ccrunx-compose2.moon
-: 1547668068:0;0x0 u ccrunx-compose.yml
-: 1547668137:0;tree > 0x0
-: 1547668144:0;rm ./0x0
-: 1547668153:0;tree | 0x0
-: 1547668156:0;tree | 0x0 u
-: 1547668161:0;tree . | 0x0 u
-: 1547668199:0;bdctl
-: 1547668202:0;bdctl reinstall
-: 1547668624:0;rm lib
-: 1547668874:0;grab ccrunx-image
-: 1547668879:0;put ccrunx-image
-: 1547668888:0;./ccrunx-image
-: 1547668891:0;./ccrunx-image -h
-: 1547668903:0;./ccrunx-image c pakernel --embed
-: 1547668916:0;./ccrunx-image c pakernel
-: 1547668935:0;file-roller ccrunx-image_pakernel.ccrunx
-: 1547668971:0;cp ccrunx-image ~/bin/ccrunx-image
-: 1547668994:0;cd test
-: 1547669109:0;rm .ccrunx/compose
-: 1547669116:0;moon ../ccrunx-compose2.moon build
-: 1547669144:0;tree .ccrunx/compose
-: 1547669185:0;moon ../ccrunx-compose2.moon up
-: 1547669301:0;rm test
-: 1547669303:0;rm ccrunx-compose
-: 1547669306:0;rm ccrunx-compose.moon
-: 1547669319:0;mv ccrunx-compose2.moon ccrunx-compose.moon
-: 1547669338:0;xdocco .
-: 1547669349:0;xdocco ccrunx-compose.moon
-: 1547669357:0;nvim example.yml
-: 1547669691:0;luarocks
-: 1547669700:0;luarocks help write_rockspec
-: 1547669735:0;bat ccrunx-image.moon
-: 1547669791:0;luarocks write_rockspec --tag="v0.2" --license="MIT/X11" --summary="Create packages for CCRunX environments" --homepage="https://github.com/daelvn/ccrunx-image"
-: 1547669923:0;git commit -m "Release"
-: 1547669970:0;git commit -m "Fixed rockspec"
-: 1547670006:0;ccrunx-image
-: 1547670017:0;see cc/ccrunx
-: 1547670051:0;cd ccrunx-compose
-: 1547670059:0;see cc/ccrunx-compose
-: 1547670082:0;git create -d "Compose CCRunX environments Ã� la docker-compose"
-: 1547670119:0;luarocks write_rockspec --tag="v0.1" --license="MIT/X11" --summary="Compose environments for CCRunX" --homepage="https://github.com/daelvn/ccrunx-compose"
-: 1547670127:0;nvim ccrunx-compose.moon
-: 1547670221:0;moonc ccrunx-compose.moon
-: 1547670227:0;mv ccrunx-compose.lua ccrunx-compose
-: 1547670240:0;nvim ccrunx-compose
-: 1547670268:0;chmod +x ccrunx-compose
-: 1547670296:0;git tag v0.1
-: 1547671773:0;mv ccrunx-compose ccrunx-compose.lua
-: 1547671778:0;nvim ccrunx-compose-0.1-1.rockspec
-: 1547671881:0;mv ccrunx-compose-0.1-1.rockspec ccrunx-compose-0.2-1.rockspec
-: 1547671884:0;bat ccrunx-compose-0.2-1.rockspec
-: 1547671933:0;rm ccrunx-compose-0.1-1.rockspec
-: 1547671944:0;git commit -m "I can't believe you've done this LuaRocks"
-: 1547671954:0;git tag v0.2
-: 1547672009:0;git commit -m "Send help"
-: 1547672014:0;git tag v0.2 -f
-: 1547672019:0;git push origin master --tags --force
-: 1547672225:0;nvim ccrunx-compose-0.2-1.rockspec
-: 1547672265:0;git commit -m "I'm going to murder whoever is in charge of LuaRocks"
-: 1547672291:0;mv ccrunx-compose-0.2-1.rockspec ccrunx-compose-0.2-2.rockspec
-: 1547672302:0;git commit -m "*sigh*"
-: 1547672314:0;rocksend ccrunx-compose
-: 1547672326:0;luarocks install ccrunx-compose
-: 1547672351:0;see cc/ccrunx-image
-: 1547672358:0;mv ccrunx-image ccrunx-image.lua
-: 1547672366:0;nvim ccrunx-image.moon
-: 1547672384:0;nvim ccrunx-image-0.2-1.rockspec
-: 1547672403:0;mv ccrunx-image-0.2-1.rockspec ccrunx-image-0.3-1.rockspec
-: 1547672434:0;git commit -m "Well shoot me in the foot and call me Travis, what is this?"
-: 1547672454:0;nvim ccrunx-image-0.3-1.rockspec
-: 1547672476:0;luarocks make
-: 1547672508:0;git commit -m "Dear LuaRocks: 'I'm going to chew you 'til my teeth are numb'"
-: 1547672535:0;git tag v0.3
-: 1547672544:0;git tag v0.3 -f
-: 1547672549:0;git push origin master --tags
-: 1547672558:0;rocksend ccrunx-image
-: 1547673128:0;host
-: 1547673130:0;hostname
-: 1547738341:0;rm .ccrunx
-: 1547739698:0;ls paboot
-: 1547739700:0;ls paboot-entries
-: 1547739708:0;ccrunx c paboot
-: 1547739719:0;ccrunx c paboot-entries
-: 1547741823:0;ccrunx r paboot-all
-: 1547741947:0;nvim paboot
-: 1547742029:0;see cc/pantheon/orig
-: 1547742030:0;nvim .
-: 1547742759:0;mkdir pautils-chroo
-: 1547742765:0;rm *-chroo
-: 1547743508:0;mkdir paunify-box-cc
-: 1547743511:0;cd paunify-box-cc
-: 1547743522:0;rm ~/bin/urn
-: 1547743528:0;ls ~/aur
-: 1547743742:0;pacaur -S urn-lang-git
-: 1547744740:0;urn
-: 1547744745:0;urn -h
-: 1547744879:0;git submodule add https://github.com/CrazedProgrammer/CCBox ccbox
-: 1547744931:0;tree .
-: 1547744941:0;nvim out.lua
-: 1547745032:0;mkdir ccbox
-: 1547745035:0;rm ccbox
-: 1547745046:0;git clone CrazedProgrammer/CCBox
-: 1547745053:0;mv CCBox ccbox
-: 1547745115:0;cd ccbox
-: 1547745117:0;urn main.lisp
-: 1547745142:0;cp out.lua ../paunify-box-cc/ccbox
-: 1547745149:0;cd ../paunify-box-cc
-: 1547745156:0;mkexec ccbox
-: 1547745162:0;chmod +x ccbox
-: 1547745200:0;cp ../orig/bios.lua ./paunify-bios.lua
-: 1547745207:0;nvim paunify-bios.lua
-: 1547745282:0;ccrunx c paunify-box-cc
-: 1547745290:0;ccrunx r paunify-box-cc
-: 1547746210:0;mv ccbox ../ccbox
-: 1547746218:0;mv orig ../rom
-: 1547750094:0;rm paunify-box-cc
-: 1547750107:0;rm -f paunify-box-cc
-: 1547750115:0;mkdir paunify-harbor-cc
-: 1547750129:0;nvim pau-cc.moon
-: 1547750893:0;mkdir paunify-chroot
-: 1547751613:0;cd programs
-: 1547752059:0;see cc/rom
-: 1547752064:0;nvim bios.lua
-: 1547752298:0;xdocco paunify-chroot.moon
-: 1547752527:0;fold
-: 1547752938:0;fold README.txt
-: 1547752949:0;fold -w 55 README.txt
-: 1547752966:0;fold -w 55 README.txt -s
-: 1547752975:0;fold -w 55 README.txt -s > README.txt
-: 1547752994:0;0x0 u paunify-chroot.moon
-: 1547753045:0;nvim paunify-chroot.moon
-: 1547753269:0;nvim LICENSE.md
-: 1547754427:0;0x0 u harbor-cc.moon
-: 1547762574:0;nvim harbor-cc.moon
-: 1547762672:0;cp paboot-entries/paboot.craftos paunify-harbor-cc/
-: 1547762946:0;mv paboot.craftos paboot.harbor-cc
-: 1547762948:0;nvim paboot.harbor-cc
-: 1547763117:0;bat paunify-harbor-cc/harbor-cc.moon
-: 1547763229:0;nvim ccrunx-compose.yml
-: 1547763261:0;tree
-: 1547763300:0;bat paboot/startup.moon
-: 1547765965:0;mv paunify-chroot.moon chroot.moon
-: 1547766003:0;ccrunx c paunify-harbor-cc
-: 1547766042:0;ccrunx c paunify-chroot
-: 1547766095:0;clear
-: 1547766100:0;nvim paunify-harbor-cc
-: 1547766123:0;tree .ccrunx/paboot-all
-: 1547766156:0;ccrunx-compose up paboot-all
-: 1547766185:0;nvim paboot/startup.moon
-: 1547766295:0;rm .ccrunx/paboot-all
-: 1547766361:0;curl -o harbor.lua https://raw.githubusercontent.com/hugeblank/harbor/master/.harbor/harbor.lua
-: 1547766366:0;nvim chroot.moon
-: 1547766465:0;moonc .
-: 1547766470:0;ccrunx-compose build paboot-all
-: 1547766492:0;ccrunx-compose u paboot-all
-: 1547766616:0;nvim ~/bin/git-su
-: 1547766681:0;chmod +x ~/bin/git-su
-: 1547766832:0;git create daelvncc/paboot
-: 1547766867:0;cd paunify-chroot
-: 1547766871:0;cd paunify-harbor-cc
-: 1547766882:0;git init
-: 1547766887:0;git create daelvncc/paunify-chroot
-: 1547766892:0;git create daelvncc/paunify-harbor-cc
-: 1547766921:0;git add -A
-: 1547766930:0;git commit -m "Initial commit"
-: 1547766936:0;git push origin master
-: 1547767030:0;cat ccrunx-compose.yml
-: 1547821886:0;see cc/pantheon
-: 1547822169:0;nvim padoc
-: 1547822174:0;mkdir padoc
-: 1547822731:0;curl -o index.json https://maxcdn-docs.devdocs.io/html/index.json
-: 1547822914:0;curl -o index.html https://devdocs.io/lua\~5.3/index\#lua_absindex
-: 1547823320:0;pacaur -Ss pdfto
-: 1547823329:0;pacaur -S python-pdftotext
-: 1547823443:0;rm index.html
-: 1547823460:0;mkdir padoc-documentation
-: 1547823462:0;cd padoc-documentation
-: 1547823465:0;mkdir lua53
-: 1547823512:0;curl -o lua53/manual53.tar.gz https://www.lua.org/ftp/refman-5.3.tar.gz
-: 1547823516:0;cd lua53
-: 1547823535:0;tar xvf manual53.tar.gz
-: 1547823541:0;rm manual53.tar.gz
-: 1547823547:0;cp lua-5.3/* .
-: 1547823553:0;rm lua-5.3
-: 1547823564:0;cd doc
-: 1547823608:0;rm *.png *.gif *.css
-: 1547823620:0;man --help
-: 1547823657:0;man -w
-: 1547823661:0;man -m . lua
-: 1547823678:0;man x
-: 1547823683:0;man python
-: 1547823687:0;rm *.1
-: 1547823708:0;firefox *
-: 1547823739:0;rm contents.html
-: 1547823860:0;pacaur -Ss html
-: 1547824144:0;pdftotext manual53.pdf
-: 1547824194:0;pdftotext -layout manual53.pdf
-: 1547824196:0;nvim manual53.txt
-: 1547824351:0;pdftotext
-: 1547824421:0;pdftotext -listenc
-: 1547824492:0;rm manual53.txt
-: 1547824495:0;firefox manual53.pdf
-: 1547824541:0;pdftotext -layout -nopgbrk manual53.pdf
-: 1547824546:0;firefox manual53.txt
-: 1547824561:0;mvo, manual53.pdf
-: 1547824567:0;nvim manual53.pdf
-: 1547825587:0;rm padoc-documentation
-: 1547825594:0;cd rom
-: 1547825598:0;cd apis
-: 1547825600:0;nvim io.lua
-: 1547830160:0;cd ...
-: 1547830202:0;nvim SPEC.txt
-: 1547832735:0;mv SPEC.txt padoc.format.8
-: 1547832915:0;mkdir paunify-libs
-: 1547832918:0;cd paunify-
-: 1547832919:0;cd paunify-libs
-: 1547832927:0;curl -o argparse.lua https://raw.githubusercontent.com/mpeterv/argparse/master/src/argparse.lua
-: 1547947200:0;see cc/ccwiki
-: 1547947208:0;bat LICENSE.txt
-: 1547947222:0;ls mdwiki-0.6.2
-: 1547947227:0;la mdwiki-0.6.2
-: 1547947231:0;rm mdwiki-0.6.2
-: 1547947235:0;rm mdwiki-debug.html
-: 1547947238:0;rm mdwiki-slim.html
-: 1547947338:0;mv mdwiki.html index.html
-: 1547947342:0;mkdir lua
-: 1547947348:0;mkdir cc
-: 1547947354:0;cp index.html lua/index.html
-: 1547947363:0;cp index.html cc/index.html
-: 1547947772:0;firefox index.html
-: 1547947806:0;nvim navigation.md
-: 1547948111:0;cd lua
-: 1547948119:0;nvim index.html
-: 1547948170:0;mv index.md 1.md
-: 1547948316:0;nvim 1.md
-: 1547948420:0;nvim index.md
-: 1547948537:0;touch 2.md 3.md 4.md 5.md 6.md 7.md 8.md
-: 1547948541:0;nvim 2.md
-: 1547948672:0;touch 2.1.md 2.2.md 2.3.md 2.4.md 2.5.md 2.6.md 2.7.md 2.8.md 2.9.md 2.10.md 2.11.md
-: 1547948682:0;touch 2.2.1.md
-: 1547948711:0;touch 2.4.1.md 2.4.2.md 2.4.3.md 2.4.4.md 2.4.5.md 2.4.6.md 2.4.7.md
-: 1547948743:0;touch 2.5.1.md 2.5.2.md 2.5.3.md 2.5.4.md 2.5.5.md 2.5.6.md 2.5.7.md 2.5.8.md 2.5.9.md
-: 1547948755:0;touch 2.10.1.md 2.10.2.md
-: 1547948787:0;nvim 2.1.md
-: 1547949121:0;ks
-: 1547949127:0;nvim 2.2.md
-: 1548001084:0;see 
-: 1548001109:0;cd cc
-: 1548001119:0;cd padoc
-: 1548001251:0;see cc/pantheon/padoc
-: 1548001255:0;nvim padoc.format.8
-: 1548001262:0;la
-: 1548001266:0;nvim padoc.moon
-: 1548003068:0;nvim pagerv
-: 1548003078:0;mkdir pagerv
-: 1548003084:0;mkproj
-: 1548003091:0;mv README.md README.txt
-: 1548004261:0;nvim pagerv.moon
-: 1548004374:0;cd pagerv
-: 1548004460:0;see cc
-: 1548004465:0;cd pantheon
-: 1548004467:0;cd paboot
-: 1548004469:0;nvim startup.moon
-: 1548007473:0;see cc/pagerv
-: 1548007476:0;nvim README.txt
-: 1548008758:0;transmission-gtk
-: 1548009173:0;see dl
-: 1548009176:0;cd cl
-: 1548009185:0;nvim \!\ \!\ \!\ P\ A\ S\ S\ W\ O\ R\ D\ \!\ \!\ \!.txt
-: 1548016372:0;pacaur -Ss john
-: 1548016386:0;pacaur -S john
-: 1548016422:0;cd dl
-: 1548016445:0;zip2john ExRe-ExRe\ \[2018\].zip
-: 1548016502:0;zip2john ExRe-ExRe\ \[2018\].zip > exre.txt
-: 1548016517:0;john --format=zip exre.txt
-: 1548017072:0;john -i exre.txt
-: 1548017082:0;john --incremental exre.txt
-: 1548017097:0;john --incremental --format=zip exre.txt
-: 1548017328:0;cd ..
-: 1548017439:0;home dl
-: 1548017519:0;cat john.pot
-: 1548017552:0;nvim john.conf
-: 1548017560:0;john --incremental=ZTA --format=zip exre.txt
-: 1548017647:0;john
-: 1548017716:0;cd .john
-: 1548017721:0;cat *
-: 1548017746:0;john --incremental=ASCII --format=zip --maxlen=6 exre.txt
-: 1548017749:0;ls
-: 1548017754:0;ls $JOHN
-: 1548017789:0;ls /usr/share/john/
-: 1548017795:0;john --incremental=ASCII --format=zip exre.txt
-: 1548017820:0;john --incremental --format=zip exre.txt
-: 1548018046:0;pacaur -Ss music
-: 1548018071:0;pacaur -S gnome-music
-: 1548018167:0;pacaur -Syu gnome-music
-: 1548022735:0;clementine
-: 1548065293:0;ls
-: 1548065294:0;lua
-: 1548065299:0;luarocks
-: 1548065353:0;ls
-: 1548065356:0;see cc
-: 1548065357:0;ls
-: 1548065365:0;mv pagerv ledv
-: 1548065365:0;ls
-: 1548065366:0;cd ledv
-: 1548065367:0;ls
-: 1548065372:0;mv pagerv.moon ledv.moon
-: 1548065376:0;nvim ledv.moon
-: 1548065759:0;clementine
-: 1548073015:0;cd dot
-: 1548073017:0;git add -A
-: 1548073018:0;ls
-: 1548073020:0;la
-: 1548073185:0;git init
-: 1548073188:0;git create
-: 1548073192:0;git create -h
-: 1548073223:0;git create -p macdots
-: 1548073235:0;git add -A
+: 1568437929:0;git create -d "A better version of the old lrunkit. Run commands in Lua easily -h "https://git.daelvn.ga/runkit/"
+: 1568437933:0;git create -d "A better version of the old lrunkit. Run commands in Lua easily" -h "https://git.daelvn.ga/runkit/"
+: 1568438173:0;nvim meteor.moon
+: 1568438237:0;mkdir meteor
+: 1568438247:0;cp meteor.moon meteor
+: 1568439840:0;luarocks list --porcelain
+: 1568442101:0;cat README.md
+: 1568442244:0;see kikgit
+: 1568442248:0;cat kikgit.moon
+: 1568442349:0;luarocks doc xhmoon
+: 1568442384:0;luarocks doc xhmoon --home
+: 1568442398:0;luarocks doc xhmoon --list
+: 1568442417:0;luarocks doc penlight --list
+: 1568442426:0;luarocks doc lpeg --list
+: 1568442505:0;nvim kikgit.moon
+: 1568442620:0;cat meteor.moon
+: 1568442625:0;rm meteor.moon
+: 1568442636:0;luarocks install runkit
+: 1568442660:0;luarocks install filekit
+: 1568442665:0;moon meteor/meteor.moon
+: 1568442803:0;moon meteor/meteor.moon d
+: 1568443033:0;nvim Makefile
+: 1568443046:0;cat meteor
+: 1568443362:0;./meteorld doc penlight --list
+: 1568444121:0;./meteorlr doc penlight
+: 1568444149:0;./meteorlr doc penlight --home
+: 1568444449:0;luarocks version
+: 1568444465:0;\luarocks --version
+: 1568444601:0;su
+: 1568444667:0;whatis whatis
+: 1568445023:0;luarocks --version
+: 1568445551:0;./meteorlr --version
+: 1568446075:0;./meteorlr --help
+: 1568446130:0;./meteorlr doc penlight --list
+: 1568446145:0;./meteorlr doc penlight --list --server="heehee"
+: 1568446199:0;luarocks lint rockwriter-1.0.1-1.rockspec
+: 1568446225:0;cp rockwriter-1.0.1-1.rockspec rockwriter-1.0.1-1.rockspec.tmp
+: 1568446230:0;nvim rockwriter-1.0.1-1.rockspec.tmp
+: 1568446241:0;luarocks lint rockwriter-1.0.1-1.rockspec.tmp
+: 1568446385:0;mv rockwriter-1.0.1-1.rockspec.tmp ~/dev/meteor
+: 1568446394:0;mv rockwriter-1.0.1-1.rockspec.tmp rspec
+: 1568446478:0;cat meteorlr
+: 1568446484:0;bat
+: 1568446489:0;bat meteorlr
+: 1568446690:0;:Wqa
+: 1568482661:0;.meteorlr
+: 1568482666:0;./meteorlr
+: 1568482683:0;mv rspec rockwriter-1.0.1-1.rockspec
+: 1568482685:0;cat rockwriter-1.0.1-1.rockspec
+: 1568482702:0;nvim rockwriter-1.0.1-1.rockspec
+: 1568482736:0;mv rockwriter-1.0.1-1.rockspec rspec
+: 1568482737:0;./meteorlr lint rockwriter-1.0.1-1.rockspec
+: 1568482784:0;./meteorlr lint rspec > out.txt 2> err.txt
+: 1568482795:0;cat out.txt err.txt
+: 1568482801:0;cat err.txt
+: 1568482845:0;nvim meteor
+: 1568483202:0;./meteorlr lint rspec
+: 1568483228:0;./meteorlr lint rspec --server=https://luarocks.org
+: 1568510890:0;rm err.txt
+: 1568510892:0;rm out.txt
+: 1568510903:0;rm rspec
+: 1568511003:0;nvim runkit.moon
+: 1568512170:0;see runkit
+: 1568512365:0;nvim manual.md
+: 1568513233:0;nvim config.ld
+: 1568513390:0;moon test.moon
+: 1568513486:0;ldoc .
+: 1568513545:0;luarocks install rockwriter
+: 1568513566:0;kikgit r v2.0
+: 1568513661:0;rocksend runkit
+: 1568514575:0;pikaur -Ss multimc
+: 1568514668:0;pikaur -S multimc5
+: 1568592536:0;nvim meteor/args.moon
+: 1568592612:0;mv meteor/args.moon meteor/argparse.moon
+: 1568592878:0;pikaur -Ss zerobrane
+: 1568593264:0;nvim meteor/argparse.moon
+: 1568595262:0;luarocks config
+: 1568595270:0;luarocks config deps_mode
+: 1568595289:0;luarocks config lua_version
+: 1568595307:0;luarocks config deps_mode "one"
+: 1568595385:0;luarocks config deps_mode "one" --scope=user
+: 1568604542:0;luarocks config --help
+: 1568611419:0;htop
+: 1568761595:0;pikaur -Ss minecraft
+: 1568761951:0;cp ~/pad/games/data/minecraft/packs/Mizunos.zip ~/.local/share/multimc/instances/civ/.minecraft/resourcepacks
+: 1568787850:0;cat coll/pagebreak.txt
+: 1568854966:0;cd meteor
+: 1568854974:0;see meteor
+: 1568855307:0;luarocks help
+: 1568855313:0;luarocks config help
+: 1568855317:0;luarocks help config
+: 1568855512:0;see rockwriter
+: 1568855515:0;nvim rockwriter.moon
+: 1568876202:0;cd media/docs
+: 1568876206:0;cd pictures
+: 1568876212:0;cd me
+: 1568876215:0;cd nsfw
+: 1568876228:0;rm -rf *
+: 1568997475:0;logout
+: 1568997696:0;pikaur
+: 1568997701:0;pikaur -Syu
+: 1568997999:0;home media/docs/school/4-eso
+: 1568998018:0;firefox literatura-3e1.pdf
+: 1568998047:0;ls7
+: 1568998101:0;rf
+: 1569124958:0;mkdir libllengua/v8
+: 1569125018:0;cd v8
+: 1569125020:0;cd libllengua
+: 1569125022:0;v8
+: 1569125090:0;cd ....
+: 1569125137:0;cd grasp
+: 1569125137:0;cd
+: 1569125186:0;rm LICENSE.md README.md
+: 1569125191:0;nvim grasp
+: 1569125205:0;mkdir grasp
+: 1569125214:0;nvim grasp/init.moon
+: 1569126265:0;nvim grasp/config.moon
+: 1569126357:0;see grasp/
+: 1569126514:0;luarocks install clutch
+: 1569126536:0;luaver use 5.3.5
+: 1569126616:0;moon grasp/init.moon
+: 1569138700:0;nvim data/namedb.moon
+: 1569144583:0;nvim coll/adarkroom.save.txt
+: 1569175629:0;see grasp
+: 1569182499:0;cd lents
+: 1569182502:0;mkdir lents
+: 1569182508:0;nvim test.moon
+: 1569183212:0;see lents
+: 1569183218:0;nvim lents/init.moon
+: 1569183265:0;mv lents lens
+: 1569185764:0;rm test.moon
+: 1569192391:0;nvim lens/v2.moon
+: 1569194225:0;nvim MANUAL.md
+: 1569196421:0;rm lens/init.moon
+: 1569197534:0;nvim spec/lens_spec.moon
+: 1569206941:0;mv lens/v2.moon lens/init.moon
+: 1569206945:0;nvim lens/init.moon
+: 1569211229:0;curl --header "Authorization: Bearer NZvw_MTVy-oaYC8mWW2an4Oy44lMF1hJmYjLv-Tah_Y" --data 'status=wait can we actually' https://freespeechextremist.com/api/v1/statuses
+: 1569211328:0;curl --header "Authorization: Bearer NZvw_MTVy-oaYC8mWW2an4Oy44lMF1hJmYjLv-Tah_Y" --data 'status=enby rights!!!' https://freespeechextremist.com/api/v1/statuses
+: 1569213641:0;xbacklight -set 0
+: 1569213644:0;xbacklight -set 10
+: 1569213645:0;xbacklight -set 5
+: 1569213684:0;xbacklight -set 20
+: 1569215472:0;pikaur -Ss python
+: 1569215478:0;pacaur -Ss python
+: 1569215482:0;pacman -Ss python
+: 1569294247:0;nvim dot/zsh
+: 1569294329:0;lua -v
+: 1569303541:0;cd media/pictures/wardrobe
+: 1569303545:0;git add -A
+: 1569378382:0;apci
+: 1569378387:0;pikaur -S apci
+: 1569378441:0;cat /sys/class/power_supply/BAT0
+: 1569378451:0;cat /sys/class/power_supply/BAT0/power_now
+: 1569378461:0;cat /sys/class/power_supply/BAT0/status
+: 1569378647:0;ls /sys/class/power
+: 1569378648:0;ls /sys/class/power/
+: 1569378658:0;ls /sys/class/power_supply
+: 1569378836:0;ls -1 /sys/class/power_supply
+: 1569378849:0;nvim dot/bspwm/.config/bspwm/polybar
+: 1569378868:0;dot/bspwm/.config/bspwm/bspwmrc
+: 1569378972:0;nvim dot/bspwm/.config/bspwm/bspwmrc
+: 1569378995:0;pkill stalonetray
+: 1569379083:0;upower -i /org/freedesktop/UPower/battery_BAT0 | grep -E "state|to\ full|percentage"
+: 1569379092:0;upower -i /org/freedesktop/UPower/battery_BAT0 | grep percentage
+: 1569379115:0;upower -e
+: 1569379134:0;upower -i /org/freedesktop/UPower/devices/line_power_AC0
+: 1569379144:0;upower -i /org/freedesktop/UPower/battery_BAT0
+: 1569382596:0;pikaur -S --force discord
+: 1569382661:0;rm -rf .cache/pacaur/discord
+: 1569382679:0;sudo rm -rf /var/cache/pacman/pkg/discord-0.0.9-*
+: 1569382687:0;pikaur -S --overwrite discord
+: 1569382696:0;pikaur -S vdiscord
+: 1569382826:0;pikaur -Ss discord
+: 1569382858:0;pikaur -R discord
+: 1569383073:0;sudo nvim /etc/pacman.d/mirrorlist
+: 1569383119:0;pikaur -Syu discord-canary
+: 1569388010:0;open-mstdn-app
+: 1569392939:0;pikaur -R discord-canary
+: 1569393106:0;pikaur -S discord
+: 1569457689:0;rm craftos2
+: 1569457691:0;y
+: 1569457694:0;git clone https://github.com/MCJack123/craftos2
+: 1569457771:0;sudo pacman -S poco
+: 1569458194:0;./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/craftos bindir=$HOME/bin
+: 1569458384:0;pikaur -Ss lua
+: 1569458614:0;cd .lo
+: 1569458651:0;cd .luaver/lua/5.1.5/lib/lua/5.1
+: 1569459115:0;git pull origin master
+: 1569459327:0;pikaur -S sdl sdl_mixer
+: 1569459440:0;pikaur -S sdl2 sdl2_mixer
+: 1569459447:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/craftos bindir=$HOME/bin
+: 1569459522:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/craftos bindir=$HOME/bin --with-ncurses
+: 1569459899:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ CPPFLAGS=$HOME/.luaver/lua/5.1.5/include/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/craftos bindir=$HOME/bin --with-ncurses
+: 1569459911:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ CPPFLAGS=-L$HOME/.luaver/lua/5.1.5/include/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/craftos bindir=$HOME/bin --with-ncurses
+: 1569460050:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ CPPFLAGS=-I$HOME/.luaver/lua/5.1.5/include/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/craftos bindir=$HOME/bin --with-ncurses
+: 1569460215:0;git clone MCJack123/craftos2-rom
+: 1569460294:0;cd craftos2
+: 1569460297:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ CPPFLAGS=-I$HOME/.luaver/lua/5.1.5/include/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/share/ bindir=$HOME/bin --with-ncurses
+: 1569460309:0;LDFLAGS=-L$HOME/.luaver/lua/5.1.5/lib/ CPPFLAGS=-I$HOME/.luaver/lua/5.1.5/include/ ./configure CC=clang CXX=clang++ --prefix=$HOME/.local/ bindir=$HOME/bin --with-ncurses
+: 1569460348:0;make all
+: 1569460352:0;make all --force
+: 1569460397:0;make clean
+: 1569460399:0;make
+: 1569460415:0;home aur/craftos2-rom
+: 1569460466:0;make install
+: 1569460480:0;cp * ~/.local/share/craftos
+: 1569460495:0;mkdir ~/.local/share/craftos && cp * ~/.local/share/craftos
+: 1569460497:0;craftos
+: 1569460669:0;craftos --curses
+: 1569460674:0;craftos --cli
+: 1569533726:0;see lens
+: 1569533731:0;busted
+: 1569538978:0;pikaur -Ss atom
+: 1569539060:0;pikaur -S atom apm
+: 1569539129:0;pikaur -Syu atom apm
+: 1569541373:0;rm README.md
+: 1569541376:0;rm LICENSE.md
+: 1569541380:0;cd guardia
+: 1569541736:0;mkdir amulet
+: 1569541743:0;cd aur
+: 1569541744:0;l
+: 1569541785:0;git clone tmpim/amulet
+: 1569541829:0;cd amulet
+: 1569541835:0;git checkout un-feature/tywithconstraints
+: 1569541922:0;curl -sSL https://get.haskellstack.org/ | sh
+: 1569542046:0;nvim dot/zsh/path
+: 1569542052:0;stack
+: 1569542062:0;stack build --fast
+: 1569543808:0;cd bin
+: 1569543810:0;curl https://ahti.space/\~mat/amc -o amc
+: 1569544168:0;cd ...
+: 1569544176:0;chmod +x daelvn/bin/amc
+: 1569544183:0;see amulet
+: 1569544219:0;mkdir miniml
+: 1569544223:0;cd miniml
+: 1569544290:0;cat ~/dot/nvim/.config/nvim/init.vim
+: 1569544385:0;home dot/nvim/.config
+: 1569544392:0;cd nvim
+: 1569544413:0;mkdir -p after/{syntax,indent}
+: 1569544414:0;tree
+: 1569544426:0;tree after
+: 1569544446:0;curl -L https://hydraz.semi.works/txt/amulet_syntax.vim -o after/syntax/amulet.vim
+: 1569544468:0;curl -L https://hydraz.semi.works/txt/amulet_indent.vim -o after/indent/amulet.vim
+: 1569544477:0;nvim init.vim
+: 1569544593:0;amc
+: 1569544873:0;home dot
+: 1569544948:0;cp nvim/.config/nvim/ ~/.config/nvim
+: 1569544964:0;rm -rf ~/.config/nvim
+: 1569544969:0;stow nvim
+: 1569544973:0;nvim test.ml
+: 1569544991:0;see amulet/miniml
+: 1569545049:0;rm test.ml
+: 1569545065:0;amc base.ml mini.ml --repl
+: 1569545153:0;nvim base.ml
+: 1569545308:0;nvim mini.ml
+: 1569556862:0;mkdir guardia
+: 1569561559:0;rockwriter guardia-1.0-1.rockspec
+: 1569561571:0;rockwriter guardia-1.0-1.rockspec --tag
+: 1569561708:0;nvim README.md
+: 1569561744:0;see filekit
+: 1569561760:0;cp config.ld ../guardia/guardia/config.ld
+: 1569561841:0;firefox docs
+: 1569561856:0;nvim guardia/config.ld
+: 1569561909:0;nvim guardia/init.moon
+: 1569561923:0;nvim guardia/guards.moon
+: 1569561932:0;moonc -
+: 1569561936:0;ldoc guardia
+: 1569562034:0;git create -d "Guards for Lua & MoonScript. Hell yea."
+: 1569562059:0;cat guardia-1.0-1.rockspec
+: 1569562064:0;nvim guardia-1.0-1.rockspec
+: 1569562084:0;kikgit r v1.0
+: 1569562119:0;rocksend guardia
+: 1569602927:0;cd lens
+: 1569602935:0;nvim lens
+: 1569607783:0;xbacklight -set 50
+: 1569607786:0;xbacklight -set 80
+: 1569619867:0;mkdir spec
+: 1569619883:0;mkdir test/signature.moon
+: 1569619887:0;rm test/signature.moon
+: 1569619892:0;nvim test/signature.moon
+: 1569634664:0;see guardia
+: 1569634697:0;nvim guardia/v2.moon
+: 1569634885:0;see
+: 1569635044:0;mkdir markgen
+: 1569635074:0;cd markgen
+: 1569635316:0;la
+: 1569635658:0;see markgen
+: 1569635695:0;nvim markgen.moon
+: 1569635897:0;rm markgen
+: 1569635902:0;archive love
+: 1569635905:0;archive moonsat
+: 1569635912:0;tree libllengua
+: 1569635919:0;archive libllengua3
+: 1569635939:0;rm -f ~/arc/moonscript
+: 1569635941:0;archive moonscript
+: 1569635946:0;archive moonscript-plus
+: 1569635948:0;archive moonscript-vim
+: 1569635959:0;cat rpkit
+: 1569635963:0;tree rpkit
+: 1569635968:0;archive rpkit
+: 1569636040:0;mkdir genome
+: 1569636052:0;mkdir documented.moon
+: 1569636058:0;rmdir documented.moon
+: 1569636081:0;nvim test/documented.moon
+: 1569636748:0;cp ltypekit7/ltypekit/signature.moon genome/genome/signature.moon
+: 1569636831:0;tree runkit
+: 1569636844:0;cat kikgit/kikgit-1.0.1-1.rockspec
+: 1569636866:0;cat rockwriter/rockwriter
+: 1569636869:0;cat rockwriter/rockwriter-1.0.1-1.rockspec
+: 1569636883:0;cat libllengua/libllengua/config.moon
+: 1569636898:0;cp libllengua/libllengua/config.moon genome/genome/config.moon
+: 1569636903:0;see genome
+: 1569636904:0;clear
+: 1569636979:0;mkdir ../ltypekit-parser
+: 1569636991:0;mv genome/signature.moon ../ltypekit-parser
+: 1569637011:0;mkdir ltypekit-parser
+: 1569637014:0;mv signature.moon ltypekit-parser
+: 1569637031:0;cp ../genome/genome/config.moon ltypekit-parser/config.moon
+: 1569637035:0;nvim ltypekit-parser
+: 1569637097:0;see ltypekit
+: 1569637100:0;see ltypekit7
+: 1569637106:0;cat ltypekit/util.moon
+: 1569637487:0;see ltypekit-parser
+: 1569637506:0;mkdir test
+: 1569637508:0;mkproj
+: 1569637736:0;nvim test/default.moon
+: 1569637877:0;mv ltypekit-parser/signature.moon ltypekit-parser/init.moon
+: 1569637912:0;see libllengua
+: 1569637919:0;nvim libllengua/config.moon
+: 1569637942:0;cat runkit/runkit-2.0-1.rockspec
+: 1569637969:0;cat meteor/meteor/meteor.moon
+: 1569638331:0;see ltypekit7/ltypekit/util.moon
+: 1569638336:0;cd ltypekit7/ltypekit/util.moon
+: 1569638341:0;cd ltypekit7/ltypekit/
+: 1569638478:0;see debugkit
+: 1569638664:0;kikgit r v1.2.2
+: 1569639386:0;nvim debugkit-1.2.2-1.rockspec
+: 1569639445:0;kikgit p
+: 1569639470:0;luarocks install debugkit
+: 1569640126:0;rockwriter ltypekit-parser-1.0-1.rockspec
+: 1569640145:0;rockwriter ltypekit-parser-7.0-1.rockspec
+: 1569640470:0;nvim .
+: 1569640598:0;rockwriter -u
+: 1569640847:0;moonc .
+: 1569640850:0;luarocks make
+: 1569646500:0;home media/pictures/civ
+: 1569646506:0;0x0 u infographic.xcf
+: 1569655340:0;moon test/default.moon
+: 1569655386:0;cat debugkit-1.2.3-1.rockspec
+: 1569655399:0;kikgit r v1.2.3
+: 1569655437:0;rocksend debugkit
+: 1569656010:0;git init
+: 1569656040:0;git create -d "ltypekit7's signature parser, unembedded"
+: 1569656059:0;kikgit r v7.0
+: 1569656093:0;rocksend ltypekit-parser
+: 1569656123:0;cd ..
+: 1569656130:0;cd genome
+: 1569656130:0;ls
+: 1569656138:0;nvim genome/config.moon
+: 1569656306:0;tree
+: 1569656309:0;nvim test/documented.moon
+: 1569657653:0;see genome
+: 1569657654:0;ls
+: 1569659554:0;nvim genome/read.moon
+: 1569710307:0;mkdir .config/nvim/ftplugin && curl https://raw.githubusercontent.com/tmpim/amulet/master/editor/amulet.vim -o .config/nvim/ftplugin/amulet.vim
+: 1569710329:0;see amulet
+: 1569710330:0;ls
+: 1569710332:0;nvim miniml
+: 1569710844:0;mkdir .config/nvim/ftplugin && curl https://raw.githubusercontent.com/tmpim/amulet/master/editor/amulet.vim -o .config/nvim/ftplugin/amulet.vim
+: 1569710997:0;cd .config/nvim/ftplugin
+: 1569711004:0;nvim .
+: 1569711020:0;nvim miniml
+: 1569711106:0;curl https://ahti.space/\~mat/amc -o bin/amc
+: 1569711199:0;ssh dael@ahti.space
+: 1569711332:0;ssh dael:cone-duckling-economist-routing-chaffing-amendable@ahti.space
+: 1569711410:0;cat .ssh/id_rsa.pub
+: 1569711459:0;ls
+: 1569711460:0;cd ..
+: 1569711460:0;ls
+: 1569711462:0;nvim init.vim
+: 1569711501:0;ssh dael@ahti.space
+: 1569711590:0;nvim miniml
+: 1569711709:0;ssh-add -l
+: 1569711742:0;man ssh-add
+: 1569711762:0;ssh-add
+: 1569711773:0;ssh dael@ahti.space
+: 1569711779:0;ssh-add -l
+: 1569711806:0;ssh dael@ahti.space
+: 1569711846:0;cat .ssh/id_rsa
+: 1569711853:0;tree .ssh
+: 1569711910:0;ssh dael@ahti.space
+: 1569712257:0;cd dot/zsh/.zshrc
+: 1569712260:0;nvim dot/zsh/.zshrc
+: 1569712778:0;echo $TERM
+: 1569713546:0;cd dot/zsh
+: 1569713546:0;ls
+: 1569713547:0;cat aliases
+: 1569713644:0;ls
+: 1569713645:0;cd ..
+: 1569713646:0;ls
+: 1569713648:0;git add -A
+: 1569713659:0;kikgit p
