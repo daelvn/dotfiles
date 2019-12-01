@@ -11,10 +11,13 @@ plugins=(
   sudo,
   docker,
   extract,
-  luaver
+  colorize,
+  cp,
+  vi-mode,
+  themes
 )
 # Theme
-ZSH_THEME="avit"
+ZSH_THEME="robbyrussell"
 # Load
 source $ZSH/oh-my-zsh.sh
 
