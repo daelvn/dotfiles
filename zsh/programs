@@ -2,4 +2,4 @@
 # By daelvn
 # Program list
 
-luaver use 5.3.5 >/dev/null && luaver use-luarocks 3.0.3 >/dev/null
+luaver use 5.1.5 >/dev/null && luaver use-luarocks 3.3.1 >/dev/null

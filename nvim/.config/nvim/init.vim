@@ -203,7 +203,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 1
 
 " Transparency
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
 " Amulet
 au BufEnter *.ml set filetype=amulet

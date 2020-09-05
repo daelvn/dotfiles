@@ -4,17 +4,13 @@
 
 # Go to a project folder
 see () {
-  cd "/home/daelvn/dev/$1/"
+  cd "/home/dael/dev/$1/"
 }
 compdef '_files -W "/home/daelvn/dev"' see
 # Init a local project in this folder
 mkproj () {
   cp "/home/daelvn/media/docs/LICENSE.md" "LICENSE.md"
   touch "README.md"
-}
-unlicense () {
-  cp "/home/daelvn/media/docs/UNLICENSE" "UNLICENSE"
-  rm "LICENSE.md"
 }
 commit_unlicense () {
   git add -A

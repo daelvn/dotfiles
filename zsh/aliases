@@ -10,6 +10,7 @@ alias rm='rm -r'
 alias edit='nvim .'
 alias launch='gtk-launch'
 alias luax='lua -e "_E=true"'
+alias loc='cloc --read-lang-def=/home/daelvn/dev/cloc.txt'
 
 # Global
 alias -g but='|'

@@ -4,12 +4,12 @@
 
 PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin/:$PATH"
-PATH="/home/daelvn/bin/:$PATH"
-PATH="/home/daelvn/bin/appimage/:$PATH"
-PATH="/home/daelvn/.gem/ruby/2.6.0/bin/:$PATH"
-PATH="/home/daelvn/dot/bin/:$PATH"
-PATH="/home/daelvn/.luaver/:$PATH"
-PATH="/home/daelvn/.local/bin/:$PATH"
+PATH="/home/dael/bin/:$PATH"
+PATH="/home/dael/bin/appimage/:$PATH"
+PATH="/home/dael/.gem/ruby/2.7.0/bin/:$PATH"
+PATH="/home/dael/dot/bin/:$PATH"
+PATH="/home/dael/.luaver/:$PATH"
+PATH="/home/dael/.local/bin/:$PATH"
 export PATH
 
 eval `luarocks path`
